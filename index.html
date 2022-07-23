@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Полный спектр услуг по шумоизоляции квартир"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:ital,wght@0,600;0,700;1,400;1,500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/button.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>MaxDar</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <div class="container">
+          <div class="header__body">
+            <div class="header__content">
+              <div class="header__logo">
+                <img src="./img/header/logo.svg" alt="logo" />
+              </div>
+              <p class="header__text">
+                Полный спектр услуг по шумоизоляции квартир
+              </p>
+            </div>
+
+            <div class="call__block">
+              <div class="call__icon">
+                <img src="./img/header/phone-icon.svg" alt="phone-icon" />
+              </div>
+              <div class="call__text">
+                <a class="call__number" href="tel:+79166300041"
+                  >+7 (916) 630-00-41</a
+                >
+                <a class="call__order popup__link" data-id="#phone">
+                  заказать звонок
+                </a>
+              </div>
+            </div>
+            <div class="call__block-effect"></div>
+          </div>
+        </div>
+      </header>
+      <div class="page__content">
+        <main class="main__content">
+          <div class="container">
+            <h1 class="main__title title">
+              Проектирование и реализация шумоизоляционных решений по франшизе
+              MaxDar Sound Security
+            </h1>
+            <h3 class="main__subtitle subtitle">
+              с чистой прибылью <span>от 300 000 рублей и выше</span>
+            </h3>
+            <p class="main__descr">
+              Откройте павильон в торговом центре, чтобы зарабатывать
+              <span>до 300 000 ₽ ежемесячно</span><br/> на комплексной шумоизоляции
+              зданий для корпоративных и частных клиентов
+            </p>
+            <div class="main__list">
+              <div class="main__item">
+                <div class="main__item-icon">
+                  <img src="./img/main/01.svg" alt="icon" />
+                </div>
+                <p class="main__item-descr">
+                  Особые условия на оптовые заказы от поставщиков SoundGuard и
+                  Acoustic Group
+                </p>
+              </div>
+              <div class="main__item">
+                <div class="main__item-icon">
+                  <img src="./img/main/02.svg" alt="icon" />
+                </div>
+                <p class="main__item-descr">
+                  Очное 5-дневное обучение в Нижнем Новгороде по готовой
+                  методике
+                </p>
+              </div>
+              <div class="main__item">
+                <div class="main__item-icon">
+                  <img src="./img/main/03.svg" alt="icon" />
+                </div>
+                <p class="main__item-descr">
+                  Обучение мастеров-замерщиков и передача обучающих материалов
+                  (чек-листы, видеоуроки, инструкции)
+                </p>
+              </div>
+            </div>
+            <div class="main__form">
+              <div class="form__container">
+                <h3 class="form__title">
+                  Получите доступ к PDF-презентации и узнайте больше
+                  подробностей по франшизе MaxDar Sound Security
+                </h3>
+                <form action id="form" class="form__body main__form-body">
+                  <div class="form__item main__form-item">
+                    <img
+                      src="./img/form/01.svg"
+                      alt="icon"
+                      class="form__input-img"
+                    />
+                    <input
+                      type="tel"
+                      name="phone"
+                      class="form__input _req _phone"
+                      placeholder="+7(___) ___ ____"
+                      data-slots="_"
+                      autocomplete="off"
+                    />
+                  </div>
+                  <div class="form__item main__form-item">
+                    <img
+                      src="./img/form/02.svg"
+                      alt="icon"
+                      class="form__input-img"
+                    />
+                    <input
+                      type="email"
+                      name="email"
+                      class="form__input _req _email"
+                      placeholder="bestpartner@max-dar.ru"
+                      autocomplete="off"
+                    />
+                  </div>
+                  <div class="form__item main__form-item">
+                    <img
+                      src="./img/form/03.svg"
+                      alt="icon"
+                      class="form__input-img"
+                    />
+                    <input
+                      type="text"
+                      name="name"
+                      class="form__input _req _name"
+                      placeholder="Максим Дедов"
+                      autocomplete="off"
+                    />
+                  </div>
+                  <input
+                    type="text"
+                    name="section-name-text"
+                    value="Получите доступ к PDF-презентации и узнайте больше подробностей по франшизе MaxDar Sound Security"
+                    hidden
+                  />
+                  <input
+                    type="text"
+                    name="section-btn-text"
+                    value="получить доступ"
+                    hidden
+                  />
+                  <input
+                    type="text"
+                    name="section-name"
+                    value="открытая"
+                    hidden
+                  />
+                  <div class="button__container">
+                    <div class="main__button">
+                      <div class="arrow-left">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                      </div>
+                      <button class="btn main__btn" type="submit">
+                        получить доступ
+                      </button>
+                      <div class="arrow-right">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                      </div>
+                    </div>
+                  </div>
+                </form>
+                <div class="privacy__block main__privacy-blok">
+                  <div class="privacy__tick">
+                    <img
+                      src="./img/form/tick.svg"
+                      alt="tick"
+                    />
+                  </div>
+                  <div class="privacy main__privacy-text">
+                    Я подтверждаю, что ознакомлен и даю согласие на обработку
+                    персональных данных на условиях и для целей, определяемых
+                    <button data-id="#privacy" class="popup__link">
+                      Политикой конфиденциальности
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </main>
+      </div>
+      <footer class="footer">footer</footer>
+    </div>
+  </body>
+</html>

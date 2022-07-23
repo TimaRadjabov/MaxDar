@@ -88,6 +88,20 @@ body {
   background-color: #009f9a;
   color: #fff;
 }
+.section__title {
+  font-family: "DIN Round Pro-Bold";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 128%;
+  text-align: center;
+  color: #009f9a;
+}
+.section__title span {
+  display: inline-block;
+  border-bottom: 2px solid black;
+}
+
 @media (max-width: 600px) {
   .container {
     width: 300px;
@@ -127,7 +141,6 @@ body {
   padding-right: 16px;
 }
 .header__text {
-  font-family: "DIN Pro";
   font-weight: 400;
   font-size: 14px;
   line-height: 17px;
@@ -239,7 +252,6 @@ body {
 }
 
 .main__item-descr {
-  font-family: "DIN Pro";
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
@@ -306,7 +318,6 @@ body {
   margin-right: 10px;
 }
 .main__privacy-text {
-  font-family: "DIN Pro";
   font-weight: 500;
   font-size: 11px;
   line-height: 14px;
@@ -349,7 +360,7 @@ body {
     margin: 0 auto;
     text-align: center;
   }
-  .form__container{
+  .form__container {
     max-width: 640px;
   }
   .form__title {
@@ -358,7 +369,7 @@ body {
     padding-bottom: 20px;
     max-width: 560px;
     margin: 0 auto;
-}
+  }
   .main__form-body {
     max-width: 320px;
     flex-direction: column;
@@ -369,8 +380,24 @@ body {
     margin-right: 0px;
     margin-bottom: 10px;
   }
+  .main__form {
+    padding-bottom: 35px;
+  }
   .form__item {
     height: 60px;
+  }
+}
+
+@media (max-width: 678px) {
+  .title {
+    font-size: 22px;
+  }
+  .subtitle {
+    font-size: 22px;
+  }
+  .main__descr {
+    font-size: 16x;
+    max-width: 500px;
   }
 }
 @media (max-width: 600px) {
@@ -397,4 +424,201 @@ body {
     line-height: 127%;
     padding-bottom: 15px;
   }
+}
+
+/* =========================================== model ============================================= */
+.section__model {
+  background: url("../img/model/background.png") 50% 0 no-repeat;
+  background-size: cover;
+}
+.model__title {
+  padding-top: 100px;
+  padding-bottom: 50px;
+}
+.model__descr {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 125%;
+  text-align: center;
+  color: #72747b;
+  max-width: 1053px;
+  margin: 0 auto;
+  padding-bottom: 50px;
+}
+.model__content {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 10px;
+}
+.model__item {
+  display: flex;
+  flex-direction: column;
+}
+.model__first-descr {
+  background: #8a8a8a;
+  padding: 20px;
+  max-width: 550px;
+  height: 140px;
+}
+.model__first-descr p {
+  font-family: "DIN Pro";
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 25px;
+  color: #ffffff;
+}
+.modal__vector {
+  width: 27px;
+  height: 27px;
+}
+.model__photos {
+  display: flex;
+  align-self: center;
+}
+
+.model__tabs {
+  background-color: #fff;
+  margin-top: -15px;
+  position: relative;
+  z-index: 3;
+}
+.model__tabs-title {
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 40px;
+  text-align: center;
+  color: #000000;
+  margin: 0 auto;
+  padding: 50px 214px;
+}
+.model__tab {
+  display: flex;
+  flex-direction: column;
+}
+.tab__items {
+  display: flex;
+  width: 870px;
+  margin: 0 auto;
+  border: 1px solid #009f9a;
+
+  position: relative;
+  z-index: 5;
+}
+.tab__item {
+  flex: 0 1 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 70px;
+  font-weight: 500;
+  font-size: 30px;
+  line-height: 37px;
+  color: #009f9a;
+}
+.tab__block {
+  position: relative;
+  display: none;
+}
+
+.tab__descr {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 25px;
+  color: #72747b;
+  max-width: 1050px;
+  padding: 50px 0px 155px 572px;
+}
+.first__tab {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+.first__mask {
+  position: absolute;
+  left: 0;
+  bottom: 50px;
+}
+.tab__item.active {
+  background: #009f9a;
+  color: #fff;
+}
+
+.tab__block.active {
+  display: block;
+}
+
+.model__subdescr {
+  max-width: 740px;
+  margin: 0 auto;
+  padding-bottom: 50px;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 25px;
+  text-align: center;
+  color: #72747b;
+}
+.model__list {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 50px;
+}
+.model__elem {
+  display: flex;
+  align-items: flex-start;
+  max-width: 350px;
+}
+.model__icon {
+  padding-right: 15px;
+}
+.madel__elem-descr {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 25px;
+  color: #000000;
+}
+
+/* ========================================= init ======================================= */
+
+.section__init {
+  background: #009f9a;
+}
+
+.init__title {
+  font-family: "DIN Round Pro-Bold";
+  max-width: 490px;
+  margin: 0 auto;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 41px;
+  text-align: center;
+  color: #000000;
+
+  padding-top: 89px;
+  padding-bottom: 30px;
+}
+.init__title span {
+  color: #fff;
+}
+.init__list {
+  display: flex;
+  justify-content: space-between;
+  max-width: 981px;
+  margin: 0 auto;
+  padding-bottom: 100px;
+}
+
+.top__descr {
+  font-family: 'DIN Pro-Bold';
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 25px;
+  color: #ffffff;
+  padding-bottom: 5px;
+}
+.bottom__descr {
+  font-family: 'DIN Pro-Bold';
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 25px;
+  color: #000000;
 }

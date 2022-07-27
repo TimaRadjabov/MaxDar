@@ -3,20 +3,37 @@ document.addEventListener("DOMContentLoaded", function(){
    const tabItem = document.querySelectorAll(".tab__item");
    const tabContent = document.querySelectorAll(".tab__block");
 
+   const stageItem = document.querySelectorAll(".stages__circle");
+   const stageContent = document.querySelectorAll(".stages__elem");
 
-   tabItem.forEach((tab, index) => {
-      tab.addEventListener('click', function(){
-         tabContent.forEach(content => {
-            content.classList.remove('active');
+   const workItem = document.querySelectorAll(".work__tab");
+   const workContent = document.querySelectorAll(".work__content");
+
+   const startupItem = document.querySelectorAll('.startup__tab-item');
+   const startupContent = document.querySelectorAll('.startup__content');
+
+   const supportItem = document.querySelectorAll('.support__tab-item');
+   const supportContent = document.querySelectorAll('.support__content');
+
+
+   function tabChanger(item, content) {
+      item.forEach((tab, index) => {
+         tab.addEventListener('click', function(){
+            content.forEach(content => {
+               content.classList.remove('active');
+            })
+            item.forEach(tab => {
+               tab.classList.remove('active');
+            })
+            content[index].classList.add('active');
+            item[index].classList.add('active');   
          })
-         tabItem.forEach(tab => {
-            tab.classList.remove('active');
-         })
-         tabContent[index].classList.add('active');
-         tabItem[index].classList.add('active');
-
-
       })
-   })
+   }
+   tabChanger(tabItem, tabContent);
+   tabChanger(stageItem, stageContent);
+   tabChanger(workItem, workContent);
+   tabChanger(startupItem, startupContent);
+   tabChanger(supportItem, supportContent);
 
 })

@@ -50,7 +50,7 @@ body {
   font-family: "DIN Pro", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  overflow-x: hidden;
+
 }
 .wrapper {
   min-height: 100%;
@@ -479,6 +479,7 @@ body {
   }
   .main__item-descr {
     font-size: 14px;
+    min-height: 80px;
   }
 }
 

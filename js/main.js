@@ -4,7 +4,6 @@ if ($('#main-body').length > 0) {
 	window.onload = function () {
 		 modalExit();
 	};
-	
 
 	// InputCity
 

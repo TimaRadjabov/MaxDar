@@ -1921,6 +1921,16 @@ body {
   bottom: -400px;
   transform: translateX(-50%);
 }
+@media screen {
+  .work__slider{
+    bottom: -370px;
+  }
+}
+@media (max-width: 1016px) {
+  .work__slider{
+    display: none;
+  }
+}
 .work__slider-item {
   width: 10px;
   height: 10px;
@@ -3209,4 +3219,8 @@ body {
   .footer__social-networks {
     padding: 20% 0 8px 0;
   }
+  .startup__number{
+    display: none;
+  }
 }
+

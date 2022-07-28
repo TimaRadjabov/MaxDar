@@ -9,7 +9,10 @@
       content="Полный спектр услуг по шумоизоляции квартир"
     />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
+    
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="shortcut icon" href="#" type="image/x-icon" />
+  
     <link
       href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:ital,wght@0,600;0,700;1,400;1,500&display=swap"
       rel="stylesheet"
@@ -17,9 +20,13 @@
     <link rel="stylesheet" href="css/reset.css" />
     <link rel="stylesheet" href="css/button.css" />
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/modal.css" />
+    <link rel="stylesheet" href="css/formStyle.css" />
+    <link rel="stylesheet" href="./css/animate.css" />
+
     <title>MaxDar</title>
   </head>
-  <body>
+  <body id="main-body">
     <div class="wrapper">
       <header class="header">
         <div class="container">
@@ -41,7 +48,7 @@
                 <a class="call__number" href="tel:+79166300041"
                   >+7 (916) 630-00-41</a
                 >
-                <a class="call__order popup__link" data-id="#phone">
+                <a class="call__order modal-phone" data-id="#phone">
                   заказать звонок
                 </a>
               </div>
@@ -51,9 +58,9 @@
         </div>
       </header>
       <div class="page__content">
-        <main class="main__content">
+        <main class="main__content ">
           <div class="container">
-            <h1 class="main__title title">
+            <h1 class="main__title title wow animate__bounceOut wow animate__fadeInUp" >
               Проектирование и&nbsp;реализация шумоизоляционных решений
               по&nbsp;франшизе MaxDar Sound Security
             </h1>
@@ -96,59 +103,38 @@
               </div>
             </div>
             <div class="main__form">
-              <div class="form__container">
-                <h3 class="form__title">
-                  Получите доступ к&nbsp;PDF-презентации и&nbsp;узнайте больше
-                  подробностей по&nbsp;франшизе MaxDar Sound Security
+              <form action="" class="form top-form">
+                <h3 class="form__title wow animate__fadeInUp">
+                  Получите доступ к PDF-презентации и узнайте больше
+                  подробностей по франшизе MaxDar Sound Security
                 </h3>
-                <form action id="form" class="form__body main__form-body">
-                  <div class="form__item main__form-item">
-                    <img
-                      src="./img/form/01.svg"
-                      alt="icon"
-                      class="form__input-img"
-                    />
-                    <input
-                      type="tel"
-                      name="phone"
-                      class="form__input _req _phone"
-                      placeholder="+7(___) ___ ____"
-                      data-slots="_"
-                      autocomplete="off"
-                    />
-                  </div>
-                  <div class="form__item main__form-item">
-                    <img
-                      src="./img/form/02.svg"
-                      alt="icon"
-                      class="form__input-img"
-                    />
-                    <input
-                      type="email"
-                      name="email"
-                      class="form__input _req _email"
-                      placeholder="bestpartner@max-dar.ru"
-                      autocomplete="off"
-                    />
-                  </div>
-                  <div class="form__item main__form-item">
-                    <img
-                      src="./img/form/03.svg"
-                      alt="icon"
-                      class="form__input-img"
-                    />
-                    <input
-                      type="text"
-                      name="name"
-                      class="form__input _req _name"
-                      placeholder="Максим Дедов"
-                      autocomplete="off"
-                    />
-                  </div>
+                <div class="form__field">
+                  <input
+                    type="tel"
+                    class="form__input form__input-phone"
+                    name="phone"
+                    placeholder="+7 (___) ___ ____"
+                    autocomplete="off"
+                  />
+                  <input
+                    type="email"
+                    class="form__input form__input-email"
+                    name="email"
+                    placeholder="bestpartner@max-dar.ru"
+                    autocomplete="off"
+                  />
+                  <input
+                    type="text"
+                    class="form__input form__input-name"
+                    name="name"
+                    placeholder="Максим Дедов"
+                    autocomplete="off"
+                  />
                   <input
                     type="text"
                     name="section-name-text"
-                    value="Получите доступ к PDF-презентации и узнайте больше подробностей по франшизе MaxDar Sound Security"
+                    value="Зарабатывайте от 240 000 рублей 
+                чистой прибыли в месяц на процедурах для лица и тела."
                     hidden
                   />
                   <input
@@ -164,34 +150,51 @@
                     hidden
                   />
                   <div class="button__container">
-                    <div class="main__button">
+                    <button class="main__button">
                       <div class="arrow-left">
                         <span></span>
                         <span></span>
                         <span></span>
                       </div>
-                      <button class="btn main__btn" type="submit">
+                      <div
+                        class="btn button form__btn top-form__btn"
+                        type="submit"
+                      >
                         получить доступ
-                      </button>
+                      </div>
                       <div class="arrow-right">
                         <span></span>
                         <span></span>
                         <span></span>
                       </div>
-                    </div>
-                  </div>
-                </form>
-                <div class="privacy__block main__privacy-blok">
-                  <div class="privacy__tick">
-                    <img src="./img/form/tick.svg" alt="tick" />
-                  </div>
-                  <div class="privacy main__privacy-text">
-                    Я подтверждаю, что ознакомлен и даю согласие на обработку
-                    персональных данных на условиях и для целей, определяемых
-                    <button data-id="#privacy" class="popup__link">
-                      Политикой конфиденциальности
                     </button>
                   </div>
+                </div>
+                <div class="form__policy">
+                  <img src="./img/form/tick.svg" alt="tick" />
+                  <p>
+                    Я подтверждаю, что ознакомлен и даю согласие на обработку
+                    персональных данных на условиях и для целей, определяемых
+                    <span class="politicy">Политикой конфиденциальности</span>
+                  </p>
+                </div>
+              </form>
+              <button class="button mobile-btn">
+                <span> Cкачать материалы </span>
+              </button>
+            </div>
+            <div class="button__container-click">
+              <div class="main__button">
+                <div class="arrow-left">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                </div>
+                <button class="btn top-btn">получить доступ</button>
+                <div class="arrow-right">
+                  <span></span>
+                  <span></span>
+                  <span></span>
                 </div>
               </div>
             </div>
@@ -199,7 +202,7 @@
         </main>
         <section class="section__model">
           <div class="container">
-            <h2 class="section__title">
+            <h2 class="section__title ">
               <span>Бизнес-модель по&nbsp;франшизе MaxDar Sound Security</span>
             </h2>
             <p class="model__descr">
@@ -231,7 +234,7 @@
                   <p>
                     Для увеличения объёма продаж параллельно
                     с&nbsp;офлайн-точкой работает интернет-магазин, где клиенты
-                    выбирают товары, заказывает звуко- и&nbsp;шумоизоляционные
+                    выбирают товары, заказывает звуко-&nbsp;и шумоизоляционные
                     материалы с&nbsp;доставкой по&nbsp;городу.
                   </p>
                 </div>
@@ -286,7 +289,7 @@
                   <div class="tab__block second">
                     <p class="tab__descr">
                       Оптовые организации или индивидуальные предприниматели,
-                      специализирующиеся на&nbsp;реализации стройматериалов или
+                      специализирующиеся на реализации стройматериалов или
                       оказывающие услуги по&nbsp;отделочным работам.
                     </p>
                     <img
@@ -349,7 +352,7 @@
         <section class="section__init">
           <div class="container">
             <div class="init__title">
-              MaxDar Sound Security <span>в цифрах:</span>
+              MaxDar Sound Security <span>в цифрах</span>:
             </div>
             <div class="init__list">
               <div class="init__item">
@@ -486,66 +489,44 @@
                     наиболее эффективное решение.
                   </p>
                 </div>
-                <div class="main__form readiness__form">
-                  <div class="form__container readiness__container">
+                <div class="main__form">
+                  <form action="" class="form top-form">
                     <h3 class="form__title">
-                      Получите доступ к&nbsp;PDF-презентации и&nbsp;узнайте
-                      больше подробностей по&nbsp;франшизе MaxDar Sound Security
+                      Узнайте больше о рынке шумоизоляции в России из
+                      презентации MaxDar Sound Security
                     </h3>
-                    <form action id="form" class="form__body main__form-body">
-                      <div class="form__item main__form-item">
-                        <img
-                          src="./img/form/01.svg"
-                          alt="icon"
-                          class="form__input-img"
-                        />
-                        <input
-                          type="tel"
-                          name="phone"
-                          class="form__input _req _phone"
-                          placeholder="+7(___) ___ ____"
-                          data-slots="_"
-                          autocomplete="off"
-                        />
-                      </div>
-                      <div class="form__item main__form-item">
-                        <img
-                          src="./img/form/02.svg"
-                          alt="icon"
-                          class="form__input-img"
-                        />
-                        <input
-                          type="email"
-                          name="email"
-                          class="form__input _req _email"
-                          placeholder="bestpartner@max-dar.ru"
-                          autocomplete="off"
-                        />
-                      </div>
-                      <div class="form__item main__form-item">
-                        <img
-                          src="./img/form/03.svg"
-                          alt="icon"
-                          class="form__input-img"
-                        />
-                        <input
-                          type="text"
-                          name="name"
-                          class="form__input _req _name"
-                          placeholder="Максим Дедов"
-                          autocomplete="off"
-                        />
-                      </div>
+                    <div class="form__field">
+                      <input
+                        type="tel"
+                        class="form__input form__input-phone"
+                        name="phone"
+                        placeholder="+7 (___) ___ ____"
+                        autocomplete="off"
+                      />
+                      <input
+                        type="email"
+                        class="form__input form__input-email"
+                        name="email"
+                        placeholder="bestpartner@max-dar.ru"
+                        autocomplete="off"
+                      />
+                      <input
+                        type="text"
+                        class="form__input form__input-name"
+                        name="name"
+                        placeholder="Максим Дедов"
+                        autocomplete="off"
+                      />
                       <input
                         type="text"
                         name="section-name-text"
-                        value="Получите доступ к PDF-презентации и узнайте больше подробностей по франшизе MaxDar Sound Security"
+                        value="Узнайте больше о рынке шумоизоляции в России из презентации MaxDar Sound Security"
                         hidden
                       />
                       <input
                         type="text"
                         name="section-btn-text"
-                        value="получить доступ"
+                        value="узнать больше"
                         hidden
                       />
                       <input
@@ -555,26 +536,37 @@
                         hidden
                       />
                       <div class="button__container">
-                        <div class="main__button">
-                          <button class="btn __btn" type="submit">
+                        <button class="main__button">
+                          <div
+                            class="btn button form__btn top-form__btn lowercase"
+                            type="submit"
+                          >
                             Узнать больше
-                          </button>
-                        </div>
-                      </div>
-                    </form>
-                    <div class="privacy__block main__privacy-blok">
-                      <div class="privacy__tick">
-                        <img src="./img/form/tick.svg" alt="tick" />
-                      </div>
-                      <div class="privacy main__privacy-text">
-                        Я&nbsp;подтверждаю, что ознакомлен и&nbsp;даю согласие
-                        на обработку персональных данных на&nbsp;условиях
-                        и&nbsp;для целей, определяемых
-                        <button data-id="#privacy" class="popup__link">
-                          Политикой конфиденциальности
+                          </div>
                         </button>
                       </div>
                     </div>
+                    <div class="form__policy">
+                      <img src="./img/form/tick.svg" alt="tick" />
+                      <p>
+                        Я подтверждаю, что ознакомлен и даю согласие на
+                        обработку персональных данных на условиях и для целей,
+                        определяемых
+                        <span class="politicy"
+                          >Политикой конфиденциальности</span
+                        >
+                      </p>
+                    </div>
+                  </form>
+                  <button class="button mobile-btn top-btn">
+                    <span> Cкачать материалы </span>
+                  </button>
+                </div>
+                <div class="button__container-click">
+                  <div class="main__button">
+                    <div class="arrow-left"></div>
+                    <button class="btn top-btn lowercase">Узнать больше</button>
+                    <div class="arrow-right"></div>
                   </div>
                 </div>
               </div>
@@ -731,7 +723,8 @@
                         class="facts__icon"
                       />
                       <p class="facts__item-descr">
-                        Были внедрены внутренние стандарты и&nbsp;чек-листы
+                        Были внедрены внутренние стандарты
+                        <br />и&nbsp;чек-листы&nbsp;
                         <span>(~ 50 000 руб.).</span>
                       </p>
                     </div>
@@ -768,7 +761,10 @@
                       class="company__logo"
                     />
                   </div>
-                  <div class="company__bottom">Учебный центр</div>
+                  <div class="company__bottom">
+                    Учебный <br />
+                    центр
+                  </div>
                 </div>
                 <div class="company__item">
                   <div class="company__top">
@@ -927,16 +923,6 @@
                               и&nbsp;звукоотталкивающей функцией.
                             </p>
                           </div>
-                          <div class="facts__item">
-                            <img
-                              src="./img/facts/icon.svg"
-                              alt="icon"
-                              class="facts__icon"
-                            />
-                            <p class="facts__item-descr">
-                              Звуко-виброизоляция для стен, пола, потолка.
-                            </p>
-                          </div>
                         </div>
                       </div>
                     </div>
@@ -960,27 +946,6 @@
                               и&nbsp;надежно монтируются звукоизоляционные
                               панели и шумопоглощающие плиты без потери
                               их&nbsp;вибро- звукоизолирующих свойств.
-                            </p>
-                          </div>
-                          <div class="facts__item">
-                            <img
-                              src="./img/facts/icon.svg"
-                              alt="icon"
-                              class="facts__icon"
-                            />
-                            <p class="facts__item-descr">
-                              Обеспечивает сохранность наполнителя внутри
-                              панели;
-                            </p>
-                          </div>
-                          <div class="facts__item">
-                            <img
-                              src="./img/facts/icon.svg"
-                              alt="icon"
-                              class="facts__icon"
-                            />
-                            <p class="facts__item-descr">
-                              Звуко-виброизоляция для стен, пола, потолка.
                             </p>
                           </div>
                         </div>
@@ -1042,16 +1007,6 @@
                               class="facts__icon"
                             />
                             <p class="facts__item-descr">
-                              Препятствует передаче структурного шума;
-                            </p>
-                          </div>
-                          <div class="facts__item">
-                            <img
-                              src="./img/facts/icon.svg"
-                              alt="icon"
-                              class="facts__icon"
-                            />
-                            <p class="facts__item-descr">
                               Гарантируют отсутствие контакта плавающей плиты со
                               стенами;
                             </p>
@@ -1063,7 +1018,17 @@
                               class="facts__icon"
                             />
                             <p class="facts__item-descr">
-                              Спасают от&nbsp;разрушительных последствий;
+                              Спасают от разрушительных последствий;
+                            </p>
+                          </div>
+                          <div class="facts__item">
+                            <img
+                              src="./img/facts/icon.svg"
+                              alt="icon"
+                              class="facts__icon"
+                            />
+                            <p class="facts__item-descr">
+                              Предотвращают колебание.
                             </p>
                           </div>
                         </div>
@@ -1178,66 +1143,43 @@
                   <h5 class="certificate__title">Гигиенический сертификат</h5>
                 </div>
               </div>
-              <div class="main__form readiness__form">
-                <div class="form__container readiness__container">
+              <div class="main__form">
+                <form action="" class="form top-form">
                   <h3 class="form__title">
-                    Получите доступ к PDF-презентации и узнайте больше
-                    подробностей по франшизе MaxDar Sound Security
+                    Присоединяйтесь к франшизе MaxDar Sound Security
                   </h3>
-                  <form action id="form" class="form__body main__form-body">
-                    <div class="form__item main__form-item">
-                      <img
-                        src="./img/form/01.svg"
-                        alt="icon"
-                        class="form__input-img"
-                      />
-                      <input
-                        type="tel"
-                        name="phone"
-                        class="form__input _req _phone"
-                        placeholder="+7(___) ___ ____"
-                        data-slots="_"
-                        autocomplete="off"
-                      />
-                    </div>
-                    <div class="form__item main__form-item">
-                      <img
-                        src="./img/form/02.svg"
-                        alt="icon"
-                        class="form__input-img"
-                      />
-                      <input
-                        type="email"
-                        name="email"
-                        class="form__input _req _email"
-                        placeholder="bestpartner@max-dar.ru"
-                        autocomplete="off"
-                      />
-                    </div>
-                    <div class="form__item main__form-item">
-                      <img
-                        src="./img/form/03.svg"
-                        alt="icon"
-                        class="form__input-img"
-                      />
-                      <input
-                        type="text"
-                        name="name"
-                        class="form__input _req _name"
-                        placeholder="Максим Дедов"
-                        autocomplete="off"
-                      />
-                    </div>
+                  <div class="form__field">
+                    <input
+                      type="tel"
+                      class="form__input form__input-phone"
+                      name="phone"
+                      placeholder="+7 (___) ___ ____"
+                      autocomplete="off"
+                    />
+                    <input
+                      type="email"
+                      class="form__input form__input-email"
+                      name="email"
+                      placeholder="bestpartner@max-dar.ru"
+                      autocomplete="off"
+                    />
+                    <input
+                      type="text"
+                      class="form__input form__input-name"
+                      name="name"
+                      placeholder="Максим Дедов"
+                      autocomplete="off"
+                    />
                     <input
                       type="text"
                       name="section-name-text"
-                      value="Получите доступ к PDF-презентации и узнайте больше подробностей по франшизе MaxDar Sound Security"
+                      value="Присоединяйтесь к франшизе MaxDar Sound Security"
                       hidden
                     />
                     <input
                       type="text"
                       name="section-btn-text"
-                      value="получить доступ"
+                      value="Узнать подробнее"
                       hidden
                     />
                     <input
@@ -1247,25 +1189,34 @@
                       hidden
                     />
                     <div class="button__container">
-                      <div class="main__button">
-                        <button class="btn __btn" type="submit">
-                          Узнать больше
-                        </button>
-                      </div>
-                    </div>
-                  </form>
-                  <div class="privacy__block main__privacy-blok">
-                    <div class="privacy__tick">
-                      <img src="./img/form/tick.svg" alt="tick" />
-                    </div>
-                    <div class="privacy main__privacy-text">
-                      Я подтверждаю, что ознакомлен и даю согласие на обработку
-                      персональных данных на условиях и для целей, определяемых
-                      <button data-id="#privacy" class="popup__link">
-                        Политикой конфиденциальности
+                      <button class="main__button">
+                        <div
+                          class="btn button form__btn top-form__btn lowercase"
+                          type="submit"
+                        >
+                          Узнать подробнее
+                        </div>
                       </button>
                     </div>
                   </div>
+                  <div class="form__policy">
+                    <img src="./img/form/tick.svg" alt="tick" />
+                    <p>
+                      Я подтверждаю, что ознакомлен и даю согласие на обработку
+                      персональных данных на условиях и для целей, определяемых
+                      <span class="politicy">Политикой конфиденциальности</span>
+                    </p>
+                  </div>
+                </form>
+                <button class="button mobile-btn top-btn">
+                  <span> Cкачать материалы </span>
+                </button>
+              </div>
+              <div class="button__container-click">
+                <div class="main__button">
+                  <button class="btn top-btn lowercase">
+                    Узнать подробнее
+                  </button>
                 </div>
               </div>
             </div>
@@ -1410,275 +1361,307 @@
                 <span>по звукоизоляционному монтажу</span>
               </h2>
               <p class="work__descr">
-                Показательные проекты MaxDar Sound Security, выполненные в&nbsp;2022
-году:
+                Показательные проекты MaxDar Sound Security, выполненные
+                в&nbsp;2022 году:
               </p>
-              <div class="work__tabs">
-                <div class="work__tab active">ЖК Анкудиновский Парк</div>
-                <div class="work__tab">ЖК Маршал Град</div>
-                <div class="work__tab">
-                  Котельная жилого дома ул.Кемеровская, д.12
-                </div>
-              </div>
-              <div class="work__content active">
-                <img src="./img/work/01.jpg" alt="work" class="work__photo" />
-                <div class="work__tab-descr">
-                  <div class="work__top">
-                    <div class="top__city">
-                      <p>Город</p>
-                      <p>Нижний Новгород</p>
-                    </div>
-                    <div class="top__task">
-                      <p>Задача</p>
-                      <p>
-                        Звукоизоляция межквартирных стен и&nbsp;потолков для
-ликвидации ударного шума между этажами.
-                      </p>
-                    </div>
+              <div class="work__main-tab">
+                <div class="work__tabs">
+                  <div class="work__tab active">ЖК Анкудиновский Парк</div>
+                  <div class="work__tab">ЖК Маршал Град</div>
+                  <div class="work__tab">
+                    Котельная жилого дома ул.Кемеровская, д.12
                   </div>
-                  <div class="work__middle">
-                    <p class="work__materials">
-                      Какие материалы были использованы
-                    </p>
-                    <p class="materials__name">SoundGuard</p>
-                    <div class="materials__list">
-                      <div>
-                        <div class="materials__item">
-                          <img src="./img/work/tick.svg" alt="tick" />
-                          <p>
-                            Виброподвесы SG Protektor, Vibro M, Vibro P, Vibro
-                            PL
-                          </p>
-                        </div>
-                        <div class="materials__item">
-                          <img src="./img/work/tick.svg" alt="tick" />
-                          <p>Демпферная лента Вибролента 27мм, 50мм</p>
-                        </div>
-                        <div class="materials__item">
-                          <img src="./img/work/tick.svg" alt="tick" />
-                          <p>Демпферная подложка Vibroroll</p>
-                        </div>
-                        <div class="materials__item">
-                          <img src="./img/work/tick.svg" alt="tick" />
-                          <p>Минеральная плита SG Basalt 50, Экоакустик</p>
-                        </div>
-                        <div class="materials__item">
-                          <img src="./img/work/tick.svg" alt="tick" />
-                          <p>Герметик SG Seal</p>
-                        </div>
-                      </div>
-                      <div>
-                        <div class="materials__item">
-                          <img src="./img/work/tick.svg" alt="tick" />
-                          <p>
-                            Звукоизоляционные кварцевые панели Экозвукоизол,
-                            Премиум
-                          </p>
-                        </div>
-                        <div class="materials__item">
-                          <img src="./img/work/tick.svg" alt="tick" />
-                          <p>Гипсокартон Gipsofon</p>
-                        </div>
-                        <div class="materials__item">
-                          <img src="./img/work/tick.svg" alt="tick" />
-                          <p>Специальные подрозетники Изобокс</p>
-                        </div>
-                        <div class="materials__item">
-                          <img src="./img/work/tick.svg" alt="tick" />
-                          <p>Шумопоглощающий Мат ИзоКовер для пола и&nbsp;потолка</p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="work__bottom">
-                    <div class="work__amount">
-                      <p>Общий метраж звукоизоляции</p>
-                      <p>300 кв. м.</p>
-                    </div>
-                    <div class="work__prise">
-                      <p>Сумма реализованного проекта</p>
-                      <h6>1 500 000 руб.</h6>
-                    </div>
+                  <div class="work__slider">
+                    <div class="work__slider-item active"></div>
+                    <div class="work__slider-item"></div>
+                    <div class="work__slider-item"></div>
                   </div>
                 </div>
-              </div>
-              <div class="work__content">
-                <img src="./img/work/02.jpg" alt="work" class="work__photo" />
-                <div class="work__tab-descr">
-                  <div class="work__top">
-                    <div class="top__city">
-                      <p>Город</p>
-                      <p>Нижний Новгород</p>
+                <div class="work__content active">
+                  <div class="work__photo-block">
+                    <img
+                      src="./img/work/01.jpg"
+                      alt="work"
+                      class="work__photo"
+                    />
+                  </div>
+                  <div class="work__tab-descr">
+                    <div class="work__top">
+                      <div class="top__city">
+                        <p>Город</p>
+                        <p>Нижний Новгород</p>
+                      </div>
+                      <div class="top__task">
+                        <p>Задача</p>
+                        <p>
+                          Звукоизоляция межквартирных стен и&nbsp;потолков для
+                          ликвидации ударного шума между этажами.
+                        </p>
+                      </div>
                     </div>
-                    <div class="top__task">
-                      <p>Задача</p>
-                      <p>
-                        Звукоизоляция потолков, межквартирных и&nbsp;межкомнатных
-                        стен, шумоизоляция пола под стяжку.
+                    <div class="work__middle">
+                      <p class="work__materials">
+                        Какие материалы были использованы
                       </p>
-                    </div>
-                  </div>
-                  <div class="work__middle">
-                    <p class="work__materials">
-                      Какие материалы были использованы
-                    </p>
-                    <p class="materials__name">SoundGuard</p>
-                    <div class="materials__list">
-                      <div>
-                        <div class="materials__item">
-                          <img src="./img/work/tick.svg" alt="tick" />
-                          <p>
-                            Виброподвесы SG Protektor, Vibro M, Vibro P, Vibro
-                            PL
-                          </p>
+                      <p class="materials__name">SoundGuard</p>
+                      <div class="materials__list">
+                        <div>
+                          <div class="materials__item">
+                            <img src="./img/work/tick.svg" alt="tick" />
+                            <p>
+                              Виброподвесы SG Protektor, Vibro M, Vibro P, Vibro
+                              PL
+                            </p>
+                          </div>
+                          <div class="materials__item">
+                            <img src="./img/work/tick.svg" alt="tick" />
+                            <p>Демпферная лента Вибролента 27мм, 50мм</p>
+                          </div>
+                          <div class="materials__item">
+                            <img src="./img/work/tick.svg" alt="tick" />
+                            <p>Демпферная подложка Vibroroll</p>
+                          </div>
+                          <div class="materials__item">
+                            <img src="./img/work/tick.svg" alt="tick" />
+                            <p>Минеральная плита SG Basalt 50, Экоакустик</p>
+                          </div>
+                          <div class="materials__item">
+                            <img src="./img/work/tick.svg" alt="tick" />
+                            <p>Герметик SG Seal</p>
+                          </div>
                         </div>
-                        <div class="materials__item">
-                          <img src="./img/work/tick.svg" alt="tick" />
-                          <p>Демпферная лента Вибролента 27мм, 50мм</p>
-                        </div>
-                        <div class="materials__item">
-                          <img src="./img/work/tick.svg" alt="tick" />
-                          <p>Демпферная подложка Vibroroll</p>
-                        </div>
-                        <div class="materials__item">
-                          <img src="./img/work/tick.svg" alt="tick" />
-                          <p>Минеральная плита SG Basalt 50, Экоакустик</p>
-                        </div>
-                        <div class="materials__item">
-                          <img src="./img/work/tick.svg" alt="tick" />
-                          <p>Герметик SG Seal</p>
-                        </div>
-                      </div>
-                      <div>
-                        <div class="materials__item">
-                          <img src="./img/work/tick.svg" alt="tick" />
-                          <p>
-                            Звукоизоляционные кварцевые панели Экозвукоизол,
-                            Премиум
-                          </p>
-                        </div>
-                        <div class="materials__item">
-                          <img src="./img/work/tick.svg" alt="tick" />
-                          <p>Гипсокартон Gipsofon</p>
-                        </div>
-                        <div class="materials__item">
-                          <img src="./img/work/tick.svg" alt="tick" />
-                          <p>Специальные подрозетники Изобокс</p>
-                        </div>
-                        <div class="materials__item">
-                          <img src="./img/work/tick.svg" alt="tick" />
-                          <p>Шумопоглощающий Мат ИзоКовер для пола и&nbsp;потолка</p>
+                        <div>
+                          <div class="materials__item">
+                            <img src="./img/work/tick.svg" alt="tick" />
+                            <p>
+                              Звукоизоляционные кварцевые панели Экозвукоизол,
+                              Премиум
+                            </p>
+                          </div>
+                          <div class="materials__item">
+                            <img src="./img/work/tick.svg" alt="tick" />
+                            <p>Гипсокартон Gipsofon</p>
+                          </div>
+                          <div class="materials__item">
+                            <img src="./img/work/tick.svg" alt="tick" />
+                            <p>Специальные подрозетники Изобокс</p>
+                          </div>
+                          <div class="materials__item">
+                            <img src="./img/work/tick.svg" alt="tick" />
+                            <p>
+                              Шумопоглощающий Мат ИзоКовер для пола
+                              и&nbsp;потолка
+                            </p>
+                          </div>
                         </div>
                       </div>
                     </div>
-                  </div>
-                  <div class="work__middle">
-                    <p class="materials__name">Acoustic Group</p>
-                    <div class="materials__list">
-                      <div>
-                        <div class="materials__item">
-                          <img src="./img/work/tick.svg" alt="tick" />
-                          <p>
-                            Виброподвесы AG Коннект ПП, Коннект ПС, Коннект КС,
-                            К-15
-                          </p>
-                        </div>
-                        <div class="materials__item">
-                          <img src="./img/work/tick.svg" alt="tick" />
-                          <p>Демпферная лента Вибростек 100мм,150мм</p>
-                        </div>
-                        <div class="materials__item">
-                          <img src="./img/work/tick.svg" alt="tick" />
-                          <p>Триплекс Панель Саундлайн db</p>
-                        </div>
-                        <div class="materials__item">
-                          <img src="./img/work/tick.svg" alt="tick" />
-                          <p>ЗИПС Модуль</p>
-                        </div>
+                    <div class="work__bottom">
+                      <div class="work__amount">
+                        <p>Общий метраж звукоизоляции</p>
+                        <p>300 кв. м.</p>
                       </div>
-                      <div>
-                        <div class="materials__item">
-                          <img src="./img/work/tick.svg" alt="tick" />
-                          <p>
-                            Панели для бескаркасной звукоизоляции ЗИПС
-                            III-Ультра, ЗИПС Z4
-                          </p>
-                        </div>
-                        <div class="materials__item">
-                          <img src="./img/work/tick.svg" alt="tick" />
-                          <p>Герметик Вибросил</p>
-                        </div>
-                        <div class="materials__item">
-                          <img src="./img/work/tick.svg" alt="tick" />
-                          <p>ССпециальные подрозетники УльтрАкустик</p>
-                        </div>
+                      <div class="work__prise">
+                        <p>Сумма реализованного проекта</p>
+                        <h6>1 500 000 руб.</h6>
                       </div>
-                    </div>
-                  </div>
-                  <div class="work__bottom">
-                    <div class="work__amount">
-                      <p>Общий метраж звукоизоляции</p>
-                      <p>800 кв. м.</p>
-                    </div>
-                    <div class="work__prise">
-                      <p>Сумма реализованного проекта</p>
-                      <h6>4 000 000 руб.</h6>
                     </div>
                   </div>
                 </div>
-              </div>
-              <div class="work__content">
-                <img src="./img/work/03.jpg" alt="work" class="work__photo" />
-                <div class="work__tab-descr">
-                  <div class="work__top">
-                    <div class="top__city">
-                      <p>Город</p>
-                      <p>Нижний Новгород</p>
-                    </div>
-                    <div class="top__task">
-                      <p>Задача</p>
-                      <p>Полная шумоизоляция</p>
-                    </div>
+                <div class="work__content">
+                  <div class="work__photo-block">
+                    <img
+                      src="./img/work/02.jpg"
+                      alt="work"
+                      class="work__photo"
+                    />
                   </div>
-                  <div class="work__middle">
-                    <p class="work__materials">
-                      Какие материалы были использованы
-                    </p>
-                    <div class="materials__block">
-                      <p class="materials__name">
-                        Потолок выполнен по&nbsp;каркасной технологии SoundGuard с
-                        использованием:
-                      </p>
-                      <p class="materials__name">
-                        Стены выполнены по&nbsp;бескаркасной технологии Acoustic
-Group с&nbsp;материалами Саундлайн ПГП Супер.
-                      </p>
+                  <div class="work__tab-descr">
+                    <div class="work__top">
+                      <div class="top__city">
+                        <p>Город</p>
+                        <p>Нижний Новгород</p>
+                      </div>
+                      <div class="top__task">
+                        <p>Задача</p>
+                        <p>
+                          Звукоизоляция потолков, межквартирных
+                          и&nbsp;межкомнатных стен, шумоизоляция пола под
+                          стяжку.
+                        </p>
+                      </div>
                     </div>
-                    <div class="materials__list">
-                      <div>
-                        <div class="materials__item">
-                          <img src="./img/work/tick.svg" alt="tick" />
-                          <p>Плотной минеральной плиты SG Basalt</p>
+                    <div class="work__middle">
+                      <p class="work__materials">
+                        Какие материалы были использованы
+                      </p>
+                      <p class="materials__name">SoundGuard</p>
+                      <div class="materials__list">
+                        <div>
+                          <div class="materials__item">
+                            <img src="./img/work/tick.svg" alt="tick" />
+                            <p>
+                              Виброподвесы SG Protektor, Vibro M, Vibro P, Vibro
+                              PL
+                            </p>
+                          </div>
+                          <div class="materials__item">
+                            <img src="./img/work/tick.svg" alt="tick" />
+                            <p>Демпферная лента Вибролента 27мм, 50мм</p>
+                          </div>
+                          <div class="materials__item">
+                            <img src="./img/work/tick.svg" alt="tick" />
+                            <p>Демпферная подложка Vibroroll</p>
+                          </div>
+                          <div class="materials__item">
+                            <img src="./img/work/tick.svg" alt="tick" />
+                            <p>Минеральная плита SG Basalt 50, Экоакустик</p>
+                          </div>
+                          <div class="materials__item">
+                            <img src="./img/work/tick.svg" alt="tick" />
+                            <p>Герметик SG Seal</p>
+                          </div>
                         </div>
-                        <div class="materials__item">
-                          <img src="./img/work/tick.svg" alt="tick" />
-                          <p>Виброподвесов Vibro P</p>
-                        </div>
-                        <div class="materials__item">
-                          <img src="./img/work/tick.svg" alt="tick" />
-                          <p>Кварцевых панелей Экозвукоизол</p>
+                        <div>
+                          <div class="materials__item">
+                            <img src="./img/work/tick.svg" alt="tick" />
+                            <p>
+                              Звукоизоляционные кварцевые панели Экозвукоизол,
+                              Премиум
+                            </p>
+                          </div>
+                          <div class="materials__item">
+                            <img src="./img/work/tick.svg" alt="tick" />
+                            <p>Гипсокартон Gipsofon</p>
+                          </div>
+                          <div class="materials__item">
+                            <img src="./img/work/tick.svg" alt="tick" />
+                            <p>Специальные подрозетники Изобокс</p>
+                          </div>
+                          <div class="materials__item">
+                            <img src="./img/work/tick.svg" alt="tick" />
+                            <p>
+                              Шумопоглощающий Мат ИзоКовер для пола
+                              и&nbsp;потолка
+                            </p>
+                          </div>
                         </div>
                       </div>
                     </div>
-                  </div>
-                  <div class="work__bottom">
-                    <div class="work__amount">
-                      <p>Общий метраж звукоизоляции</p>
-                      <p>120 кв. м.</p>
+                    <div class="work__middle">
+                      <p class="materials__name">Acoustic Group</p>
+                      <div class="materials__list">
+                        <div>
+                          <div class="materials__item">
+                            <img src="./img/work/tick.svg" alt="tick" />
+                            <p>
+                              Виброподвесы AG Коннект ПП, Коннект ПС, Коннект
+                              КС, К-15
+                            </p>
+                          </div>
+                          <div class="materials__item">
+                            <img src="./img/work/tick.svg" alt="tick" />
+                            <p>Демпферная лента Вибростек 100мм,150мм</p>
+                          </div>
+                          <div class="materials__item">
+                            <img src="./img/work/tick.svg" alt="tick" />
+                            <p>Триплекс Панель Саундлайн db</p>
+                          </div>
+                          <div class="materials__item">
+                            <img src="./img/work/tick.svg" alt="tick" />
+                            <p>ЗИПС Модуль</p>
+                          </div>
+                        </div>
+                        <div>
+                          <div class="materials__item">
+                            <img src="./img/work/tick.svg" alt="tick" />
+                            <p>
+                              Панели для бескаркасной звукоизоляции ЗИПС
+                              III-Ультра, ЗИПС Z4
+                            </p>
+                          </div>
+                          <div class="materials__item">
+                            <img src="./img/work/tick.svg" alt="tick" />
+                            <p>Герметик Вибросил</p>
+                          </div>
+                          <div class="materials__item">
+                            <img src="./img/work/tick.svg" alt="tick" />
+                            <p>ССпециальные подрозетники УльтрАкустик</p>
+                          </div>
+                        </div>
+                      </div>
                     </div>
-                    <div class="work__prise">
-                      <p>Сумма реализованного проекта</p>
-                      <h6>450 000 руб.</h6>
+                    <div class="work__bottom">
+                      <div class="work__amount">
+                        <p>Общий метраж звукоизоляции</p>
+                        <p>800 кв. м.</p>
+                      </div>
+                      <div class="work__prise">
+                        <p>Сумма реализованного проекта</p>
+                        <h6>4 000 000 руб.</h6>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="work__content">
+                  <div class="work__photo-block">
+                    <img
+                      src="./img/work/03.jpg"
+                      alt="work"
+                      class="work__photo"
+                    />
+                  </div>
+                  <div class="work__tab-descr">
+                    <div class="work__top">
+                      <div class="top__city">
+                        <p>Город</p>
+                        <p>Нижний Новгород</p>
+                      </div>
+                      <div class="top__task">
+                        <p>Задача</p>
+                        <p>Полная шумоизоляция</p>
+                      </div>
+                    </div>
+                    <div class="work__middle">
+                      <p class="work__materials">
+                        Какие материалы были использованы
+                      </p>
+                      <div class="materials__block">
+                        <p class="materials__name">
+                          Потолок выполнен по&nbsp;каркасной технологии
+                          SoundGuard с использованием:
+                        </p>
+                        <p class="materials__name">
+                          Стены выполнены по&nbsp;бескаркасной технологии
+                          Acoustic Group с&nbsp;материалами Саундлайн ПГП Супер.
+                        </p>
+                      </div>
+                      <div class="materials__list">
+                        <div>
+                          <div class="materials__item">
+                            <img src="./img/work/tick.svg" alt="tick" />
+                            <p>Плотной минеральной плиты SG Basalt</p>
+                          </div>
+                          <div class="materials__item">
+                            <img src="./img/work/tick.svg" alt="tick" />
+                            <p>Виброподвесов Vibro P</p>
+                          </div>
+                          <div class="materials__item">
+                            <img src="./img/work/tick.svg" alt="tick" />
+                            <p>Кварцевых панелей Экозвукоизол</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="work__bottom">
+                      <div class="work__amount">
+                        <p>Общий метраж звукоизоляции</p>
+                        <p>120 кв. м.</p>
+                      </div>
+                      <div class="work__prise">
+                        <p>Сумма реализованного проекта</p>
+                        <h6>450 000 руб.</h6>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -1705,7 +1688,7 @@ Group с&nbsp;материалами Саундлайн ПГП Супер.
                           <p>Задача</p>
                           <p>
                             Звукоизоляция межквартирных стен и&nbsp;потолков для
-ликвидации ударного шума между этажами.
+                            ликвидации ударного шума между этажами.
                           </p>
                         </div>
                       </div>
@@ -1759,7 +1742,8 @@ Group с&nbsp;материалами Саундлайн ПГП Супер.
                             <div class="materials__item">
                               <img src="./img/work/tick.svg" alt="tick" />
                               <p>
-                                Шумопоглощающий Мат ИзоКовер для пола и&nbsp;потолка
+                                Шумопоглощающий Мат ИзоКовер для пола
+                                и&nbsp;потолка
                               </p>
                             </div>
                           </div>
@@ -1799,8 +1783,9 @@ Group с&nbsp;материалами Саундлайн ПГП Супер.
                         <div class="top__task">
                           <p>Задача</p>
                           <p>
-                            Звукоизоляция потолков, межквартирных и&nbsp;межкомнатных
-стен, шумоизоляция пола под стяжку.
+                            Звукоизоляция потолков, межквартирных
+                            и&nbsp;межкомнатных стен, шумоизоляция пола под
+                            стяжку.
                           </p>
                         </div>
                       </div>
@@ -1854,7 +1839,8 @@ Group с&nbsp;материалами Саундлайн ПГП Супер.
                             <div class="materials__item">
                               <img src="./img/work/tick.svg" alt="tick" />
                               <p>
-                                Шумопоглощающий Мат ИзоКовер для пола и&nbsp;потолка
+                                Шумопоглощающий Мат ИзоКовер для пола
+                                и&nbsp;потолка
                               </p>
                             </div>
                           </div>
@@ -1945,12 +1931,13 @@ Group с&nbsp;материалами Саундлайн ПГП Супер.
                         </p>
                         <div class="materials__block">
                           <p class="materials__name">
-                            Потолок выполнен по&nbsp;каркасной технологии SoundGuard
-с&nbsp;использованием:
+                            Потолок выполнен по&nbsp;каркасной технологии
+                            SoundGuard с&nbsp;использованием:
                           </p>
                           <p class="materials__name">
-                            Стены выполнены по&nbsp;бескаркасной технологии Acoustic
-Group с&nbsp;материалами Саундлайн ПГП Супер.
+                            Стены выполнены по&nbsp;бескаркасной технологии
+                            Acoustic Group с&nbsp;материалами Саундлайн ПГП
+                            Супер.
                           </p>
                         </div>
                         <div class="materials__list">
@@ -1994,10 +1981,10 @@ Group с&nbsp;материалами Саундлайн ПГП Супер.
                 Честны и&nbsp;открыты с&nbsp;вами
               </h2>
               <p class="socials__descr">
-                Компания активно ведёт аккаунты в&nbsp;социальных сетях, размещает
-                информативный контент на&nbsp;сторонних площадках для повышения
-                лояльности потенциальных заказчиков и&nbsp;увеличения клиентской
-                базы.
+                Компания активно ведёт аккаунты в&nbsp;социальных сетях,
+                размещает информативный контент на&nbsp;сторонних площадках для
+                повышения лояльности потенциальных заказчиков и&nbsp;увеличения
+                клиентской базы.
               </p>
               <div class="socials__block">
                 <div class="socials__item">
@@ -2006,7 +1993,9 @@ Group с&nbsp;материалами Саундлайн ПГП Супер.
                     <li class="socials__list-item">
                       Фотографии готовых объектов;
                     </li>
-                    <li class="socials__list-item">Отзывы от&nbsp;заказчиков;</li>
+                    <li class="socials__list-item">
+                      Отзывы от&nbsp;заказчиков;
+                    </li>
                     <li class="socials__list-item">Результаты до/после.</li>
                   </ul>
                   <a href="#" class="socials__portfolio"
@@ -2044,14 +2033,15 @@ Group с&nbsp;материалами Саундлайн ПГП Супер.
             <div class="startup__body">
               <h2 class="section__title">
                 <span class="first__title"
-                  >Запуск бизнеса за&nbsp;30&nbsp;дней в&nbsp;5&nbsp;этапов</span
+                  >Запуск бизнеса за&nbsp;30&nbsp;дней
+                  в&nbsp;5&nbsp;этапов</span
                 ><span>при полноценной поддержке головной компании</span>
               </h2>
               <p class="startup__descr">
-                За&nbsp;счёт того, что многие процессы организовываются параллельно,
-а&nbsp;команда специалистов постоянно консультирует по&nbsp;всем
-возникающим вопросам и&nbsp;содействует организации бизнеса, открытие
-компании происходит за&nbsp;1&nbsp;месяц.
+                За&nbsp;счёт того, что многие процессы организовываются
+                параллельно, а&nbsp;команда специалистов постоянно консультирует
+                по&nbsp;всем возникающим вопросам и&nbsp;содействует организации
+                бизнеса, открытие компании происходит за&nbsp;1&nbsp;месяц.
               </p>
               <div class="startup__main">
                 <div class="startup__tabs">
@@ -2141,8 +2131,8 @@ Group с&nbsp;материалами Саундлайн ПГП Супер.
                         class="facts__icon startup__icon"
                       />
                       <p class="facts__item-descr startup__item-descr">
-                        Передача внутренних регламентов сети, ознакомление с
-                        документацией
+                        Передача внутренних регламентов сети, ознакомление
+                        с&nbsp;документацией
                       </p>
                     </div>
                     <div class="facts__item startup__item">
@@ -2187,8 +2177,8 @@ Group с&nbsp;материалами Саундлайн ПГП Супер.
                         class="facts__icon startup__icon"
                       />
                       <p class="facts__item-descr startup__item-descr">
-                        Передача рекомендаций по&nbsp;поиску локации: местоположение,
-площадь, стоимость аренды
+                        Передача рекомендаций по&nbsp;поиску локации:
+                        местоположение, площадь, стоимость аренды
                       </p>
                     </div>
                     <div class="facts__item startup__item">
@@ -2198,8 +2188,8 @@ Group с&nbsp;материалами Саундлайн ПГП Супер.
                         class="facts__icon startup__icon"
                       />
                       <p class="facts__item-descr startup__item-descr">
-                        Поиск помещения в&nbsp;соответствии со&nbsp;стандартами компании и
-заключение договора аренды
+                        Поиск помещения в&nbsp;соответствии со&nbsp;стандартами
+                        компании и заключение договора аренды
                       </p>
                     </div>
                     <div class="facts__item startup__item">
@@ -2209,8 +2199,8 @@ Group с&nbsp;материалами Саундлайн ПГП Супер.
                         class="facts__icon startup__icon"
                       />
                       <p class="facts__item-descr startup__item-descr">
-                        Изготовление и&nbsp;размещение пристенного павильона по
-                        стандартам торгового центра
+                        Изготовление и&nbsp;размещение пристенного павильона
+                        по&nbsp;стандартам торгового центра
                       </p>
                     </div>
                   </div>
@@ -2225,8 +2215,8 @@ Group с&nbsp;материалами Саундлайн ПГП Супер.
                         class="facts__icon startup__icon"
                       />
                       <p class="facts__item-descr startup__item-descr">
-                        Офлайн-обучение от&nbsp;собственника (7&nbsp;дней) на&nbsp;базе
-головной компании в&nbsp;Нижнем Новгороде
+                        Офлайн-обучение от&nbsp;собственника (7&nbsp;дней)
+                        на&nbsp;базе головной компании в&nbsp;Нижнем Новгороде
                       </p>
                     </div>
                     <div class="facts__item startup__item">
@@ -2283,7 +2273,8 @@ Group с&nbsp;материалами Саундлайн ПГП Супер.
                         class="facts__icon startup__icon"
                       />
                       <p class="facts__item-descr startup__item-descr">
-                        Проверка торговой точки на&nbsp;готовность к&nbsp;открытию
+                        Проверка торговой точки на&nbsp;готовность
+                        к&nbsp;открытию
                       </p>
                     </div>
                   </div>
@@ -2320,8 +2311,8 @@ Group с&nbsp;материалами Саундлайн ПГП Супер.
                           class="facts__icon startup__icon"
                         />
                         <p class="facts__item-descr startup__item-descr">
-                          Согласование условий сотрудничества с&nbsp;MaxDar Sound
-Security, оплата паушального взноса
+                          Согласование условий сотрудничества с&nbsp;MaxDar
+                          Sound Security, оплата паушального взноса
                         </p>
                       </div>
                       <div class="facts__item startup__item">
@@ -2384,7 +2375,7 @@ Security, оплата паушального взноса
                         />
                         <p class="facts__item-descr startup__item-descr">
                           Передача рекомендаций по&nbsp;поиску локации:
-местоположение, площадь, стоимость аренды
+                          местоположение, площадь, стоимость аренды
                         </p>
                       </div>
                       <div class="facts__item startup__item">
@@ -2394,8 +2385,9 @@ Security, оплата паушального взноса
                           class="facts__icon startup__icon"
                         />
                         <p class="facts__item-descr startup__item-descr">
-                          Поиск помещения в&nbsp;соответствии со&nbsp;стандартами компании
-и&nbsp;заключение договора аренды
+                          Поиск помещения в&nbsp;соответствии
+                          со&nbsp;стандартами компании и&nbsp;заключение
+                          договора аренды
                         </p>
                       </div>
                       <div class="facts__item startup__item">
@@ -2405,8 +2397,8 @@ Security, оплата паушального взноса
                           class="facts__icon startup__icon"
                         />
                         <p class="facts__item-descr startup__item-descr">
-                          Изготовление и&nbsp;размещение пристенного павильона по
-                          стандартам торгового центра
+                          Изготовление и&nbsp;размещение пристенного павильона
+                          по стандартам торгового центра
                         </p>
                       </div>
                     </div>
@@ -2427,8 +2419,8 @@ Security, оплата паушального взноса
                           class="facts__icon startup__icon"
                         />
                         <p class="facts__item-descr startup__item-descr">
-                          Офлайн-обучение от&nbsp;собственника (7&nbsp;дней) на&nbsp;базе
-головной компании в&nbsp;Нижнем Новгороде
+                          Офлайн-обучение от&nbsp;собственника (7&nbsp;дней)
+                          на&nbsp;базе головной компании в&nbsp;Нижнем Новгороде
                         </p>
                       </div>
                       <div class="facts__item startup__item">
@@ -2449,7 +2441,7 @@ Security, оплата паушального взноса
                         />
                         <p class="facts__item-descr startup__item-descr">
                           Передача материалов для обучения и&nbsp;аттестации
-сотрудников
+                          сотрудников
                         </p>
                       </div>
                     </div>
@@ -2481,7 +2473,8 @@ Security, оплата паушального взноса
                           class="facts__icon startup__icon"
                         />
                         <p class="facts__item-descr startup__item-descr">
-                          Запуск рекламной кампании в&nbsp;регионе открытия точки
+                          Запуск рекламной кампании в&nbsp;регионе открытия
+                          точки
                         </p>
                       </div>
                       <div class="facts__item startup__item">
@@ -2491,7 +2484,8 @@ Security, оплата паушального взноса
                           class="facts__icon startup__icon"
                         />
                         <p class="facts__item-descr startup__item-descr">
-                          Проверка торговой точки на&nbsp;готовность к&nbsp;открытию
+                          Проверка торговой точки на&nbsp;готовность
+                          к&nbsp;открытию
                         </p>
                       </div>
                     </div>
@@ -2521,9 +2515,9 @@ Security, оплата паушального взноса
                 </div>
               </div>
               <div class="startup__text">
-                Постоянное сопровождение на&nbsp;протяжении каждого этапа подготовки
-                гарантирует запуск бизнеса по&nbsp;оказанию услуг монтажа
-                шумоизоляции в&nbsp;установленные сроки.
+                Постоянное сопровождение на&nbsp;протяжении каждого этапа
+                подготовки гарантирует запуск бизнеса по&nbsp;оказанию услуг
+                монтажа шумоизоляции в&nbsp;установленные сроки.
               </div>
             </div>
           </div>
@@ -2537,7 +2531,7 @@ Security, оплата паушального взноса
               </h2>
               <p class="support__descr">
                 Комплексная поддержка команды головной компании гарантирует
-успешное открытие компании по&nbsp;шумоизоляции.
+                успешное открытие компании по&nbsp;шумоизоляции.
               </p>
               <div class="support__main">
                 <div class="support__tabs">
@@ -2568,18 +2562,9 @@ Security, оплата паушального взноса
                         class="facts__icon startup__icon"
                       />
                       <p class="facts__item-descr startup__item-descr">
-                        <span>Площадь пристенного павильона: 5-6 кв.м.</span>
-                      </p>
-                    </div>
-                    <div class="facts__item startup__item">
-                      <img
-                        src="./img/facts/icon.svg"
-                        alt="icon"
-                        class="facts__icon startup__icon"
-                      />
-                      <p class="facts__item-descr startup__item-descr">
-                        <span>
-                          Локация: строительные торговые центры, 1&nbsp;этаж</span
+                        <span
+                          >Площадь пристенного павильона:
+                          5&nbsp;-&nbsp;6&nbsp;кв.м.</span
                         >
                       </p>
                     </div>
@@ -2590,8 +2575,21 @@ Security, оплата паушального взноса
                         class="facts__icon startup__icon"
                       />
                       <p class="facts__item-descr startup__item-descr">
-                        Подготовка готового дизайн-макета пристенного павильона по
-требованиям&nbsp;ТЦ
+                        <span>
+                          Локация: строительные торговые центры,
+                          1&nbsp;этаж</span
+                        >
+                      </p>
+                    </div>
+                    <div class="facts__item startup__item">
+                      <img
+                        src="./img/facts/icon.svg"
+                        alt="icon"
+                        class="facts__icon startup__icon"
+                      />
+                      <p class="facts__item-descr startup__item-descr">
+                        Подготовка готового дизайн-макета пристенного павильона
+                        по требованиям&nbsp;ТЦ
                       </p>
                     </div>
                     <div class="facts__item startup__item">
@@ -2612,7 +2610,8 @@ Security, оплата паушального взноса
                         class="facts__icon startup__icon"
                       />
                       <p class="facts__item-descr startup__item-descr">
-                        Передача требований к&nbsp;ремонту помещения, включая мебель
+                        Передача требований к&nbsp;ремонту помещения, включая
+                        мебель
                       </p>
                     </div>
                   </div>
@@ -2631,8 +2630,9 @@ Security, оплата паушального взноса
                         class="facts__icon startup__icon"
                       />
                       <p class="facts__item-descr startup__item-descr">
-                        Для начала работы компании вам достаточно иметь в&nbsp;штате 1
-мастера-монтажника и&nbsp;1&nbsp;менеджера по&nbsp;продажам.
+                        Для начала работы компании вам достаточно иметь
+                        в&nbsp;штате 1 мастера-монтажника
+                        и&nbsp;1&nbsp;менеджера по&nbsp;продажам.
                       </p>
                     </div>
                     <div class="facts__item startup__item">
@@ -2642,10 +2642,10 @@ Security, оплата паушального взноса
                         class="facts__icon startup__icon"
                       />
                       <p class="facts__item-descr startup__item-descr">
-                        Выезд команды запуска для проверки подготовленной точки, а
-также для обучения персонала специфике продаж, методам
-взаимодействия с&nbsp;клиентами, проведения мастер-классов и
-обучающих курсов (при необходимости).
+                        Выезд команды запуска для проверки подготовленной точки,
+                        а также для обучения персонала специфике продаж, методам
+                        взаимодействия с&nbsp;клиентами, проведения
+                        мастер-классов и обучающих курсов (при необходимости).
                       </p>
                     </div>
                     <div class="facts__item startup__item">
@@ -2657,8 +2657,9 @@ Security, оплата паушального взноса
                       <p class="facts__item-descr startup__item-descr">
                         <span>
                           Предоставление доступа к&nbsp;обучающим материалам в
-онлайн-формате, где будет располагаться и&nbsp;обновляться
-весь обучающий контент в&nbsp;формате:
+                          онлайн-формате, где будет располагаться
+                          и&nbsp;обновляться весь обучающий контент
+                          в&nbsp;формате:
                         </span>
                       </p>
                     </div>
@@ -2684,8 +2685,9 @@ Security, оплата паушального взноса
                       />
                       <p class="facts__item-descr startup__item-descr">
                         <span
-                          >MaxDar Sound Security&nbsp;&mdash; официальный дистрибьютор
-компаний SoundGuard и&nbsp;Acoustic Group</span
+                          >MaxDar Sound Security&nbsp;&mdash; официальный
+                          дистрибьютор компаний SoundGuard и&nbsp;Acoustic
+                          Group</span
                         >
                       </p>
                     </div>
@@ -2696,9 +2698,10 @@ Security, оплата паушального взноса
                         class="facts__icon startup__icon"
                       />
                       <p class="facts__item-descr startup__item-descr">
-                        Организация оптовой закупки и&nbsp;доставки материалов для
-шумоизоляции (виброподвесы, клей и&nbsp;др.) на&nbsp;особых условиях
-от&nbsp;поставщиков SoundGuard и&nbsp;Acoustic Group
+                        Организация оптовой закупки и&nbsp;доставки материалов
+                        для шумоизоляции (виброподвесы, клей и&nbsp;др.)
+                        на&nbsp;особых условиях от&nbsp;поставщиков SoundGuard
+                        и&nbsp;Acoustic Group
                       </p>
                     </div>
                     <div class="facts__item startup__item">
@@ -2728,8 +2731,8 @@ Security, оплата паушального взноса
                         class="facts__icon startup__icon"
                       />
                       <p class="facts__item-descr startup__item-descr">
-                        Доля клиентов, приходящих из&nbsp;онлайн-каналов, составляет
-                        60% всей клиентской базы.
+                        Доля клиентов, приходящих из&nbsp;онлайн-каналов,
+                        составляет 60% всей клиентской базы.
                       </p>
                     </div>
                     <div class="facts__item startup__item">
@@ -2740,22 +2743,22 @@ Security, оплата паушального взноса
                       />
                       <p class="facts__item-descr startup__item-descr">
                         Отдел маркетинга головной компании занимается
-онлайн-продвижением и&nbsp;решает следующие задачи:
+                        онлайн-продвижением и&nbsp;решает следующие задачи:
                       </p>
                     </div>
                     <ul class="startup__second-list">
                       <li>
-                        Добавление информации о&nbsp;торговой точке в&nbsp;социальные сети и
-на&nbsp;сайт головной компании
+                        Добавление информации о&nbsp;торговой точке
+                        в&nbsp;социальные сети и на&nbsp;сайт головной компании
                       </li>
                       <li>
-                        Добавление отметок в&nbsp;геолокационные сервисы и&nbsp;первичное
-наполнение контентом
+                        Добавление отметок в&nbsp;геолокационные сервисы
+                        и&nbsp;первичное наполнение контентом
                       </li>
                       <li>
-                        Подготовка и&nbsp;передача макетов материалов для оформления
-                        торговой точки, а&nbsp;также для униформы для сотрудников,
-                        визиток и&nbsp;др.
+                        Подготовка и&nbsp;передача макетов материалов для
+                        оформления торговой точки, а&nbsp;также для униформы для
+                        сотрудников, визиток и&nbsp;др.
                       </li>
                     </ul>
                   </div>
@@ -2787,7 +2790,8 @@ Security, оплата паушального взноса
                         />
                         <p class="facts__item-descr startup__item-descr">
                           <span>
-                            Локация: строительные торговые центры, 1&nbsp;этаж</span
+                            Локация: строительные торговые центры,
+                            1&nbsp;этаж</span
                           >
                         </p>
                       </div>
@@ -2799,7 +2803,7 @@ Security, оплата паушального взноса
                         />
                         <p class="facts__item-descr startup__item-descr">
                           Подготовка готового дизайн-макета пристенного
-павильона по&nbsp;требованиям&nbsp;ТЦ
+                          павильона по&nbsp;требованиям&nbsp;ТЦ
                         </p>
                       </div>
                       <div class="facts__item startup__item">
@@ -2821,7 +2825,7 @@ Security, оплата паушального взноса
                         />
                         <p class="facts__item-descr startup__item-descr">
                           Передача требований к&nbsp;ремонту помещения, включая
-мебель
+                          мебель
                         </p>
                       </div>
                     </div>
@@ -2833,54 +2837,54 @@ Security, оплата паушального взноса
                     >Формирование и&nbsp;обучение команды</label
                   >
                   <div class="faq-text">
-                    
-                      <div class="support__list">
-                        <div class="facts__item startup__item">
-                          <img
-                            src="./img/facts/icon.svg"
-                            alt="icon"
-                            class="facts__icon startup__icon"
-                          />
-                          <p class="facts__item-descr startup__item-descr">
-                            Для начала работы компании вам достаточно иметь в&nbsp;штате 1
-                            мастера-монтажника и&nbsp;1&nbsp;менеджера по&nbsp;продажам.
-                          </p>
-                        </div>
-                        <div class="facts__item startup__item">
-                          <img
-                            src="./img/facts/icon.svg"
-                            alt="icon"
-                            class="facts__icon startup__icon"
-                          />
-                          <p class="facts__item-descr startup__item-descr">
-                            Выезд команды запуска для проверки подготовленной точки, а
-также для обучения персонала специфике продаж, методам
-взаимодействия с&nbsp;клиентами, проведения мастер-классов и
-обучающих курсов (при необходимости).
-                          </p>
-                        </div>
-                        <div class="facts__item startup__item">
-                          <img
-                            src="./img/facts/icon.svg"
-                            alt="icon"
-                            class="facts__icon startup__icon"
-                          />
-                          <p class="facts__item-descr startup__item-descr">
-                            <span>
-                              Предоставление доступа к&nbsp;обучающим материалам в
-онлайн-формате, где будет располагаться и&nbsp;обновляться
-весь обучающий контент в&nbsp;формате:
-                            </span>
-                          </p>
-                        </div>
-                        <ul class="support__content-list">
-                          <li class="support__content-item">видеоуроков;</li>
-                          <li class="support__content-item">чек-листов;</li>
-                          <li class="support__content-item">инструкций.</li>
-                        </ul>
+                    <div class="support__list">
+                      <div class="facts__item startup__item">
+                        <img
+                          src="./img/facts/icon.svg"
+                          alt="icon"
+                          class="facts__icon startup__icon"
+                        />
+                        <p class="facts__item-descr startup__item-descr">
+                          Для начала работы компании вам достаточно иметь
+                          в&nbsp;штате 1 мастера-монтажника
+                          и&nbsp;1&nbsp;менеджера по&nbsp;продажам.
+                        </p>
                       </div>
-             
-                    
+                      <div class="facts__item startup__item">
+                        <img
+                          src="./img/facts/icon.svg"
+                          alt="icon"
+                          class="facts__icon startup__icon"
+                        />
+                        <p class="facts__item-descr startup__item-descr">
+                          Выезд команды запуска для проверки подготовленной
+                          точки, а также для обучения персонала специфике
+                          продаж, методам взаимодействия с&nbsp;клиентами,
+                          проведения мастер-классов и обучающих курсов (при
+                          необходимости).
+                        </p>
+                      </div>
+                      <div class="facts__item startup__item">
+                        <img
+                          src="./img/facts/icon.svg"
+                          alt="icon"
+                          class="facts__icon startup__icon"
+                        />
+                        <p class="facts__item-descr startup__item-descr">
+                          <span>
+                            Предоставление доступа к&nbsp;обучающим материалам в
+                            онлайн-формате, где будет располагаться
+                            и&nbsp;обновляться весь обучающий контент
+                            в&nbsp;формате:
+                          </span>
+                        </p>
+                      </div>
+                      <ul class="support__content-list">
+                        <li class="support__content-item">видеоуроков;</li>
+                        <li class="support__content-item">чек-листов;</li>
+                        <li class="support__content-item">инструкций.</li>
+                      </ul>
+                    </div>
                   </div>
                 </div>
                 <div class="faq__item last__title">
@@ -2889,110 +2893,87 @@ Security, оплата паушального взноса
                     >Интернет-продвижение компании</label
                   >
                   <div class="faq-text">
-                    
-                      <div class="support__list">
-                        <div class="facts__item startup__item">
-                          <img
-                            src="./img/facts/icon.svg"
-                            alt="icon"
-                            class="facts__icon startup__icon"
-                          />
-                          <p class="facts__item-descr startup__item-descr">
-                            Доля клиентов, приходящих из&nbsp;онлайн-каналов, составляет
-60% всей клиентской базы.
-                          </p>
-                        </div>
-                        <div class="facts__item startup__item">
-                          <img
-                            src="./img/facts/icon.svg"
-                            alt="icon"
-                            class="facts__icon startup__icon"
-                          />
-                          <p class="facts__item-descr startup__item-descr">
-                            Отдел маркетинга головной компании занимается
-онлайн-продвижением и&nbsp;решает следующие задачи:
-                          </p>
-                        </div>
-                        <ul class="startup__second-list">
-                          <li>
-                            Добавление информации о&nbsp;торговой точке в&nbsp;социальные сети и
-                            на&nbsp;сайт головной компании
-                          </li>
-                          <li>
-                            Добавление отметок в&nbsp;геолокационные сервисы и&nbsp;первичное
-наполнение контентом
-                          </li>
-                          <li>
-                            Подготовка и&nbsp;передача макетов материалов для оформления
-торговой точки, а&nbsp;также для униформы для сотрудников,
-визиток и&nbsp;др.
-                          </li>
-                        </ul>
+                    <div class="support__list">
+                      <div class="facts__item startup__item">
+                        <img
+                          src="./img/facts/icon.svg"
+                          alt="icon"
+                          class="facts__icon startup__icon"
+                        />
+                        <p class="facts__item-descr startup__item-descr">
+                          Доля клиентов, приходящих из&nbsp;онлайн-каналов,
+                          составляет 60% всей клиентской базы.
+                        </p>
                       </div>
-                    
+                      <div class="facts__item startup__item">
+                        <img
+                          src="./img/facts/icon.svg"
+                          alt="icon"
+                          class="facts__icon startup__icon"
+                        />
+                        <p class="facts__item-descr startup__item-descr">
+                          Отдел маркетинга головной компании занимается
+                          онлайн-продвижением и&nbsp;решает следующие задачи:
+                        </p>
+                      </div>
+                      <ul class="startup__second-list">
+                        <li>
+                          Добавление информации о&nbsp;торговой точке
+                          в&nbsp;социальные сети и на&nbsp;сайт головной
+                          компании
+                        </li>
+                        <li>
+                          Добавление отметок в&nbsp;геолокационные сервисы
+                          и&nbsp;первичное наполнение контентом
+                        </li>
+                        <li>
+                          Подготовка и&nbsp;передача макетов материалов для
+                          оформления торговой точки, а&nbsp;также для униформы
+                          для сотрудников, визиток и&nbsp;др.
+                        </li>
+                      </ul>
+                    </div>
                   </div>
                 </div>
               </div>
               <div class="main__form">
-                <div class="form__container">
+                <form action="" class="form top-form">
                   <h3 class="form__title">
                     Комплексная поддержка экспертов гарантирует успешное
                     открытие компании
                   </h3>
-                  <form action id="form" class="form__body main__form-body">
-                    <div class="form__item main__form-item">
-                      <img
-                        src="./img/form/01.svg"
-                        alt="icon"
-                        class="form__input-img"
-                      />
-                      <input
-                        type="tel"
-                        name="phone"
-                        class="form__input _req _phone"
-                        placeholder="+7(___) ___ ____"
-                        data-slots="_"
-                        autocomplete="off"
-                      />
-                    </div>
-                    <div class="form__item main__form-item">
-                      <img
-                        src="./img/form/02.svg"
-                        alt="icon"
-                        class="form__input-img"
-                      />
-                      <input
-                        type="email"
-                        name="email"
-                        class="form__input _req _email"
-                        placeholder="bestpartner@max-dar.ru"
-                        autocomplete="off"
-                      />
-                    </div>
-                    <div class="form__item main__form-item">
-                      <img
-                        src="./img/form/03.svg"
-                        alt="icon"
-                        class="form__input-img"
-                      />
-                      <input
-                        type="text"
-                        name="name"
-                        class="form__input _req _name"
-                        placeholder="Максим Дедов"
-                        autocomplete="off"
-                      />
-                    </div>
+                  <div class="form__field">
+                    <input
+                      type="tel"
+                      class="form__input form__input-phone"
+                      name="phone"
+                      placeholder="+7 (___) ___ ____"
+                      autocomplete="off"
+                    />
+                    <input
+                      type="email"
+                      class="form__input form__input-email"
+                      name="email"
+                      placeholder="bestpartner@max-dar.ru"
+                      autocomplete="off"
+                    />
+                    <input
+                      type="text"
+                      class="form__input form__input-name"
+                      name="name"
+                      placeholder="Максим Дедов"
+                      autocomplete="off"
+                    />
                     <input
                       type="text"
                       name="section-name-text"
-                      value="Получите доступ к PDF-презентации и узнайте больше подробностей по франшизе MaxDar Sound Security"
+                      value="Комплексная поддержка экспертов гарантирует успешное открытие компании"
                       hidden
                     />
                     <input
                       type="text"
                       name="section-btn-text"
-                      value="получить доступ"
+                      value="Связаться с менеджером"
                       hidden
                     />
                     <input
@@ -3002,230 +2983,241 @@ Security, оплата паушального взноса
                       hidden
                     />
                     <div class="button__container">
-                      <div class="main__button">
-                        <div class="arrow-left">
-                          <span></span>
-                          <span></span>
-                          <span></span>
-                        </div>
-                        <button class="btn main__btn" type="submit">
+                      <button class="main__button">
+                        <div
+                          class="btn button form__btn top-form__btn lowercase"
+                          type="submit"
+                        >
                           Связаться с менеджером
-                        </button>
-                        <div class="arrow-right">
-                          <span></span>
-                          <span></span>
-                          <span></span>
                         </div>
-                      </div>
-                    </div>
-                  </form>
-                  <div class="privacy__block main__privacy-blok">
-                    <div class="privacy__tick">
-                      <img src="./img/form/tick.svg" alt="tick" />
-                    </div>
-                    <div class="privacy main__privacy-text">
-                      Я подтверждаю, что ознакомлен и даю согласие на обработку
-                      персональных данных на условиях и для целей, определяемых
-                      <button data-id="#privacy" class="popup__link">
-                        Политикой конфиденциальности
                       </button>
                     </div>
                   </div>
+                  <div class="form__policy">
+                    <img src="./img/form/tick.svg" alt="tick" />
+                    <p>
+                      Я подтверждаю, что ознакомлен и даю согласие на обработку
+                      персональных данных на условиях и для целей, определяемых
+                      <span class="politicy">Политикой конфиденциальности</span>
+                    </p>
+                  </div>
+                </form>
+                <button class="button mobile-btn top-btn">
+                  <span> Cкачать материалы </span>
+                </button>
+              </div>
+              <div class="button__container-click">
+                <div class="main__button">
+                  <button class="btn top-btn lowercase">
+                    Cкачать материалы
+                  </button>
                 </div>
               </div>
             </div>
           </div>
         </section>
-       <section class="section__plan">
-            <div class="container">
-              <div class="plan__content">
-                <h2 class="section__title">
-                  <span class="first__title">В 2022 году компания планирует запуск</span
-                  ><span> 15 потенциальных партнёров</span>
-                </h2>
-                <p class="plan__descr">
-                  Головной офис планирует открыть новые франчайзинговые точки в
-                  городах, близких по экономическим, социальным и культурным
-                  показателям к г. Нижний Новгород.
-                </p>
-                <div class="plan__top">
-                  <div class="plan__item">
-                    <div class="plan__city">Воронеж</div>
-                  </div>
-                  <div class="plan__item">
-                    <div class="plan__city">Казань</div>
-                  </div>
-                  <div class="plan__item">
-                    <div class="plan__city">Пермь</div>
-                  </div>
+        <section class="section__plan">
+          <div class="container">
+            <div class="plan__content">
+              <h2 class="section__title">
+                <span class="first__title"
+                  >В 2022 году компания планирует запуск</span
+                ><span> 15 потенциальных партнёров</span>
+              </h2>
+              <p class="plan__descr">
+                Головной офис планирует открыть новые франчайзинговые точки в
+                городах, близких по экономическим, социальным и культурным
+                показателям к г. Нижний Новгород.
+              </p>
+              <div class="plan__top">
+                <div class="plan__item">
+                  <div class="plan__city">Воронеж</div>
                 </div>
-                <div class="plan__middle">
-                  <div class="plan__item">
-                    <div class="plan__city">Самара</div>
-                  </div>
-                  <div class="plan__item">
-                    <div class="plan__city">Екатеринбург</div>
-                  </div>
+                <div class="plan__item">
+                  <div class="plan__city">Казань</div>
                 </div>
-                <div class="plan__bottom">
-                  <div class="plan__item">
-                    <div class="plan__city">Уфа</div>
-                  </div>
-                  <div class="plan__item">
-                    <div class="plan__city">Волгоград</div>
-                  </div>
-                  <div class="plan__item">
-                    <div class="plan__city">Челябинск</div>
-                  </div>
-                </div>
-                <div class="plan__info">
-                  <img src="./img/plan/phone-icon.svg" alt="icon">
-                  <p>Команда MaxDar Sound Security большое внимание уделяет качеству оказываемой поддержки на любом этапе открытия бизнеса и последующего ведения операционной деятельности, поэтому количество франшиз в 2022 году ограничено.</p>
+                <div class="plan__item">
+                  <div class="plan__city">Пермь</div>
                 </div>
               </div>
+              <div class="plan__middle">
+                <div class="plan__item">
+                  <div class="plan__city">Самара</div>
+                </div>
+                <div class="plan__item">
+                  <div class="plan__city">Екатеринбург</div>
+                </div>
+              </div>
+              <div class="plan__bottom">
+                <div class="plan__item">
+                  <div class="plan__city">Уфа</div>
+                </div>
+                <div class="plan__item">
+                  <div class="plan__city">Волгоград</div>
+                </div>
+                <div class="plan__item">
+                  <div class="plan__city">Челябинск</div>
+                </div>
+              </div>
+              <div class="plan__info">
+                <img src="./img/plan/phone-icon.svg" alt="icon" />
+                <p>
+                  Команда MaxDar Sound Security большое внимание уделяет
+                  качеству оказываемой поддержки на любом этапе открытия бизнеса
+                  и последующего ведения операционной деятельности, поэтому
+                  количество франшиз в 2022 году ограничено.
+                </p>
+              </div>
             </div>
+          </div>
         </section>
         <section class="section__client">
           <div class="client__body">
             <div class="container client__container">
               <div class="client__content">
-                <h2 class="client__title title">Полноценное продвижение и&nbsp;формирование базы частных и&nbsp;корпоративных
-                  клиентов, <span>заинтересованных в&nbsp;шумоизоляции помещений,</span>
-                    <span class="special">по&nbsp;франшизе MaxDar Sound Security</span></h2>
+                <h2 class="client__title title">
+                  Полноценное продвижение и&nbsp;формирование базы частных
+                  и&nbsp;корпоративных клиентов,
+                  <span>заинтересованных в&nbsp;шумоизоляции помещений,</span>
+                  <span class="special"
+                    >по&nbsp;франшизе MaxDar Sound Security</span
+                  >
+                </h2>
                 <div class="client__description">
-                  <p>Становление компании MaxDar Sound Security&nbsp;&mdash; это совокупность работы всей команды, которая работает
-                    с&nbsp;максимальной отдачей. </p>
-      
-                  <p>В&nbsp;развитии всей нашей сети я&nbsp;руководствуюсь фразой Теодора Рузвельта: &laquo;Делай, что можешь, с&nbsp;тем,
-                    что имеешь, там, где ты&nbsp;есть&raquo;.</p>
-      
-                  <p>Я&nbsp;уверен, что многие могут открыть компанию по&nbsp;шумоизоляции квартир
-                    и&nbsp;отдельных помещений и&nbsp;начать оказывать услуги, но&nbsp;это совсем не&nbsp;значит, что у&nbsp;каждого может
-                    получится. К&nbsp;сожалению, по&nbsp;статистике, каждый пятый бизнес нерентабелен и&nbsp;не&nbsp;приносит желаемого
-                    дохода своему владельцу.</p>
-    
-                  <p>За&nbsp;годы работы на&nbsp;рынке мы&nbsp;совместными усилиями всей команды &laquo;набили руку&raquo; и&nbsp;готовы передать
-                    партнёрам наш опыт&nbsp;по:</p>
+                  <p>
+                    Становление компании MaxDar Sound Security&nbsp;&mdash; это
+                    совокупность работы всей команды, которая работает
+                    с&nbsp;максимальной отдачей.
+                  </p>
+
+                  <p>
+                    В&nbsp;развитии всей нашей сети я&nbsp;руководствуюсь фразой
+                    Теодора Рузвельта: &laquo;Делай, что можешь, с&nbsp;тем, что
+                    имеешь, там, где ты&nbsp;есть&raquo;.
+                  </p>
+
+                  <p>
+                    Я&nbsp;уверен, что многие могут открыть компанию
+                    по&nbsp;шумоизоляции квартир и&nbsp;отдельных помещений
+                    и&nbsp;начать оказывать услуги, но&nbsp;это совсем
+                    не&nbsp;значит, что у&nbsp;каждого может получится.
+                    К&nbsp;сожалению, по&nbsp;статистике, каждый пятый бизнес
+                    нерентабелен и&nbsp;не&nbsp;приносит желаемого дохода своему
+                    владельцу.
+                  </p>
+
+                  <p>
+                    За&nbsp;годы работы на&nbsp;рынке мы&nbsp;совместными
+                    усилиями всей команды &laquo;набили руку&raquo;
+                    и&nbsp;готовы передать партнёрам наш опыт&nbsp;по:
+                  </p>
                 </div>
-                <img class="client__quotation-mark" src="./img/client/quotation-mark.svg" alt="quotation-mark">
-                <div class="client__item "><img src="./img/client/check.svg" alt="check">
+                <img
+                  class="client__quotation-mark"
+                  src="./img/client/quotation-mark.svg"
+                  alt="quotation-mark"
+                />
+                <div class="client__item">
+                  <img src="./img/client/check.svg" alt="check" />
                   <p>грамоте выстраивания рабочего процесса;</p>
                 </div>
-                <div class="client__item"><img src="./img/client/check.svg" alt="check">
-                  <p>этапам запуска вашей компании по&nbsp;шумоизоляции
-                    квартир и&nbsp;отдельных помещений;</p>
+                <div class="client__item">
+                  <img src="./img/client/check.svg" alt="check" />
+                  <p>
+                    этапам запуска вашей компании по&nbsp;шумоизоляции квартир
+                    и&nbsp;отдельных помещений;
+                  </p>
                 </div>
-                <div class="client__item"><img src="./img/client/check.svg" alt="check">
-                  <p>грамоте ведения бизнеса, чтобы избежать
-                    финансовых потерь.</p>
+                <div class="client__item">
+                  <img src="./img/client/check.svg" alt="check" />
+                  <p>
+                    грамоте ведения бизнеса, чтобы избежать финансовых потерь.
+                  </p>
                 </div>
-                
-                  <div class="main__form">
-                    <div class="form__container client__form-container">
-                      <h3 class="form__title">
-                      Комплексная поддержка экспертов гарантирует успешное открытие компании
-                      </h3>
-                      <form action id="form" class="form__body main__form-body">
-                       <div class="form__item main__form-item">
-                        <img
-                          src="./img/form/01.svg"
-                          alt="icon"
-                          class="form__input-img"
-                        />
-                        <input
-                          type="tel"
-                          name="phone"
-                          class="form__input _req _phone"
-                          placeholder="+7(___) ___ ____"
-                          data-slots="_"
-                          autocomplete="off"
-                        />
-                       </div>
-                       <div class="form__item main__form-item">
-                        <img
-                          src="./img/form/02.svg"
-                          alt="icon"
-                          class="form__input-img"
-                        />
-                        <input
-                          type="email"
-                          name="email"
-                          class="form__input _req _email"
-                          placeholder="bestpartner@max-dar.ru"
-                          autocomplete="off"
-                        />
-                       </div>
-                       <div class="form__item main__form-item">
-                        <img
-                          src="./img/form/03.svg"
-                          alt="icon"
-                          class="form__input-img"
-                        />
-                        <input
-                          type="text"
-                          name="name"
-                          class="form__input _req _name"
-                          placeholder="Максим Дедов"
-                          autocomplete="off"
-                        />
-                       </div>
-                       <input
+                <div class="main__form">
+                  <form action="" class="form top-form">
+                    <h3 class="form__title">
+                      Комплексная поддержка экспертов гарантирует успешное
+                      открытие компании
+                    </h3>
+                    <div class="form__field">
+                      <input
+                        type="tel"
+                        class="form__input form__input-phone"
+                        name="phone"
+                        placeholder="+7 (___) ___ ____"
+                        autocomplete="off"
+                      />
+                      <input
+                        type="email"
+                        class="form__input form__input-email"
+                        name="email"
+                        placeholder="bestpartner@max-dar.ru"
+                        autocomplete="off"
+                      />
+                      <input
+                        type="text"
+                        class="form__input form__input-name"
+                        name="name"
+                        placeholder="Максим Дедов"
+                        autocomplete="off"
+                      />
+                      <input
                         type="text"
                         name="section-name-text"
-                        value="Получите доступ к PDF-презентации и узнайте больше подробностей по франшизе MaxDar Sound Security"
+                        value="Комплексная поддержка экспертов гарантирует успешное открытие компании"
                         hidden
-                       />
-                       <input
+                      />
+                      <input
                         type="text"
                         name="section-btn-text"
-                        value="получить доступ"
+                        value="Связаться с менеджером"
                         hidden
-                       />
-                       <input
+                      />
+                      <input
                         type="text"
                         name="section-name"
                         value="открытая"
                         hidden
-                       />
-                       <div class="button__container">
-                        <div class="main__button">
-                          <div class="arrow-left">
-                           <span></span>
-                           <span></span>
-                           <span></span>
+                      />
+                      <div class="button__container">
+                        <button class="main__button">
+                          <div
+                            class="btn button form__btn top-form__btn lowercase"
+                            type="submit"
+                          >
+                            Связаться с менеджером
                           </div>
-                          <button class="btn main__btn" type="submit">
-                           получить доступ
-                          </button>
-                          <div class="arrow-right">
-                           <span></span>
-                           <span></span>
-                           <span></span>
-                          </div>
-                        </div>
-                       </div>
-                      </form>
-                      <div class="privacy__block main__privacy-blok">
-                      <div class="privacy__tick client__privacy">
-                        <img
-                         src="./img/form/tick.svg"
-                         alt="tick"
-                        />
-                      </div>
-                      <div class="privacy main__privacy-text client__privacy">
-                        Я подтверждаю, что ознакомлен и даю согласие на обработку
-                        персональных данных на условиях и для целей, определяемых
-                        <button data-id="#privacy" class="popup__link">
-                         Политикой конфиденциальности
                         </button>
                       </div>
-                     </div>
                     </div>
+                    <div class="form__policy">
+                      <img src="./img/form/tick.svg" alt="tick" />
+                      <p>
+                        Я подтверждаю, что ознакомлен и даю согласие на
+                        обработку персональных данных на условиях и для целей,
+                        определяемых
+                        <span class="politicy"
+                          >Политикой конфиденциальности</span
+                        >
+                      </p>
+                    </div>
+                  </form>
+                  <button class="button mobile-btn top-btn">
+                    <span> Связаться с менеджером </span>
+                  </button>
+                </div>
+                <div class="button__container-click">
+                  <div class="main__button">
+                    <button class="btn top-btn lowercase">
+                      Cкачать материалы
+                    </button>
                   </div>
-                 
+                </div>
                 <div class="client__card">
                   <p class="client__card-name">
-                    <span>Дмитрий Пологов</span> <br /> Руководитель компании MaxDar Sound Security
+                    <span>Дмитрий Пологов</span> <br />
+                    Руководитель компании MaxDar Sound Security
                   </p>
                   <div class="client__triangle"></div>
                 </div>
@@ -3249,21 +3241,26 @@ Security, оплата паушального взноса
               </div>
             </div>
             <div class="footer__second-block">
-              <img
-                class="footer__logo"
-                src="./img/footer/logo.svg"
-                alt="brand"
-              />
+              <a href="https://md-ss.ru/" target="_blank"
+                ><img
+                  class="footer__logo"
+                  src="./img/footer/logo.svg"
+                  alt="brand"
+              /></a>
               <div class="footer__social-networks">
-                <a href="/"
+                <a
+                  href="https://www.youtube.com/channel/UCJZ3tU3CVVN_T6oX4x-h0AQ"
+                  target="_blank"
                   ><img src="./img/footer/youtube.svg" alt="youtube"
                 /></a>
-                <a href="/"><img src="./img/footer/vk.svg" alt="vk" /></a>
+                <a href="https://vk.com/maxdarss" target="_blank"
+                  ><img src="./img/footer/vk.svg" alt="vk"
+                /></a>
               </div>
             </div>
             <div class="footer__third-block">
               <div class="header__call footer__call">
-                <div class="footer__call-block">
+                <div class="footer__call-block call__block">
                   <div class="call__icon footer__call-icon">
                     <img src="./img/footer/phone-icon.svg" alt="phone-icon" />
                   </div>
@@ -3271,11 +3268,11 @@ Security, оплата паушального взноса
                     <a class="call__number" href="tel:+79219662408"
                       >8 (916) 630-00-41</a
                     >
-                    <p class="call__order">Бесплатный звонок</p>
+                    <p class="call__order modal-phone">Бесплатный звонок</p>
                   </div>
                 </div>
               </div>
-              <p class="footer__policy">Политика конфиденциальности</p>
+              <p class="footer__policy politicy">Политика конфиденциальности</p>
               <div class="footer__franchise">
                 <a
                   href="https://xn--5-7sbamtgf4aex7b0b.xn--p1ai/"
@@ -3298,7 +3295,572 @@ Security, оплата паушального взноса
         </div>
       </footer>
     </div>
+
+    
+
+    <script src="./js/jquery.min.js"></script>
+    <script src="./js/imask.min.js"></script>
+    <script src="./js/wow.min.js"></script>
+    <script>
+      new WOW().init();
+    </script>
+    <script src="./js/formprocessor.js"></script>
+    <script src="./js/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
     <script src="./js/tabs.js"></script>
     <script src="./js/slider.js"></script>
+   
+    <div class="popup popup-presentation popup-franchising">
+      <div class="popup__wrapper popup-presentation__wrapper">
+        <div class="popup__inner popup-presentation__inner">
+          <div class="container">
+            <div
+              class="popup__content popup-presentation__content"
+              id="first__modal"
+            >
+              <button class="btn-close popup__btn-close popup-close"></button>
+              <div class="popup-presentation__item">
+                <h2 class="popup-presentation__title">
+                  Получите презентацию о бизнес-модели MaxDar Sound Security
+                </h2>
+                <form action="" class="form popup-presentation__form">
+                  <div class="form__field popup-presentation__form-field">
+                    <input
+                      type="text"
+                      class="form__input form__input-phone"
+                      name="phone"
+                      placeholder="+7 (___) ___ ____"
+                    />
+                    <input
+                      type="text"
+                      class="form__input form__input-name"
+                      name="name"
+                      placeholder="Максим Дедов"
+                    />
+                    <input
+                      type="email"
+                      class="form__input form__input-email"
+                      name="email"
+                      placeholder="bestpartner@maxdar.ru"
+                    />
+                    <input
+                      type="text"
+                      name="section-name-text"
+                      value="Получите презентацию
+                    о бизнес-модели MaxDar Sound Security"
+                      hidden
+                    />
+                    <input
+                      type="text"
+                      name="section-btn-text"
+                      value="Получить презентацию"
+                      hidden
+                    />
+                    <input
+                      type="text"
+                      name="section-name"
+                      value="закрытая"
+                      hidden
+                    />
+                    <div class="button__container-modal">
+                      <button class="main__button main__button-modal">
+                        <div class="arrow-left">
+                          <span></span>
+                          <span></span>
+                          <span></span>
+                        </div>
+                        <div
+                          class="btn button form__btn top-form__btn"
+                          type="submit"
+                        >
+                          Получить презентацию
+                        </div>
+                        <div class="arrow-right">
+                          <span></span>
+                          <span></span>
+                          <span></span>
+                        </div>
+                      </button>
+                    </div>
+                  </div>
+                  <div class="form__policy from__policy-modal">
+                    <img src="./img/form/tick.svg" alt="tick" />
+                    <p>
+                      Я подтверждаю, что ознакомлен и даю согласие на обработку
+                      персональных данных на условиях и для целей, определяемых
+                      <span class="politicy">Политикой конфиденциальности</span>
+                    </p>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="popup popup-presentation popup-phone">
+      <div class="popup__wrapper popup-presentation__wrapper">
+        <div class="popup__inner popup-presentation__inner">
+          <div
+            class="popup__content popup-presentation__content"
+            id="second__modal"
+          >
+            <button class="btn-close popup__btn-close popup-close"></button>
+            <div class="popup-presentation__item">
+              <h2 class="popup-presentation__title">
+                Получите презентацию о бизнес-модели MaxDar Sound Security
+              </h2>
+              <form action="" class="form popup-presentation__form">
+                <div class="form__field popup-presentation__form-field">
+                  <input
+                    type="text"
+                    class="form__input form__input-phone"
+                    name="phone"
+                    placeholder="+7 (___) ___ ____"
+                  />
+
+                  <input
+                    type="text"
+                    class="form__input form__input-name"
+                    name="name"
+                    placeholder="Максим Дедов"
+                  />
+                  <input
+                    type="email"
+                    class="form__input form__input-email"
+                    name="email"
+                    placeholder="bestpartner@maxdar.ru"
+                  />
+                  <input
+                    type="text"
+                    name="section-name-text"
+                    value="Получите презентацию
+                  о бизнес-модели MaxDar Sound Security"
+                    hidden
+                  />
+                  <input
+                    type="text"
+                    name="section-btn-text"
+                    value="Получить презентацию"
+                    hidden
+                  />
+                  <input
+                    type="text"
+                    name="section-name"
+                    value="закрытая"
+                    hidden
+                  />
+                  <div class="button__container-modal">
+                    <button class="main__button main__button-modal">
+                      <div class="arrow-left">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                      </div>
+                      <div
+                        class="btn button form__btn top-form__btn"
+                        type="submit"
+                      >
+                        Получить презентацию
+                      </div>
+                      <div class="arrow-right">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                      </div>
+                    </button>
+                  </div>
+                </div>
+                <div class="form__policy from__policy-modal">
+                  <img src="./img/form/tick.svg" alt="tick" />
+                  <p>
+                    Я подтверждаю, что ознакомлен и даю согласие на обработку
+                    персональных данных на условиях и для целей, определяемых
+                    <span class="politicy">Политикой конфиденциальности</span>
+                  </p>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="popup popup-presentation popup-exit">
+      <div class="popup__wrapper popup-presentation__wrapper">
+        <div class="popup__inner popup-presentation__inner">
+          <div
+            class="popup__content popup-presentation__content"
+            id="third__modal"
+          >
+            <button class="btn-close popup__btn-close popup-close"></button>
+            <div class="popup-presentation__item">
+              <div class="popup-presentation__item-text">
+                <h2 class="popup-presentation__title">Уже уходите?</h2>
+                <p class="popup-presentation-descrip">
+                  Не упускайте шанс присоединиться <br />
+                  к франшизе шумоизоляционной компании. Получите бесплатную
+                  презентацию на почту.
+                </p>
+              </div>
+              <form action="" class="form popup-presentation__form">
+                <div class="form__field popup-presentation__form-field">
+                  <input
+                    type="text"
+                    class="form__input form__input-phone"
+                    name="phone"
+                    placeholder="+7 (___) ___ ____"
+                  />
+                  <input
+                    type="text"
+                    class="form__input form__input-name"
+                    name="name"
+                    placeholder="Елена Плескова"
+                  />
+                  <input
+                    type="email"
+                    class="form__input form__input-email"
+                    name="email"
+                    placeholder="bestpartner@yagoda.me"
+                  />
+                  <input
+                    type="text"
+                    name="section-name-text"
+                    value="Уже уходите?"
+                    hidden
+                  />
+                  <input
+                    type="text"
+                    name="section-btn-text"
+                    value="Получить презентацию"
+                    hidden
+                  />
+                  <input
+                    type="text"
+                    name="section-name"
+                    value="закрытая"
+                    hidden
+                  />
+                  <div class="button__container-modal">
+                    <button class="main__button main__button-modal">
+                      <div class="arrow-left">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                      </div>
+                      <div
+                        class="btn button form__btn top-form__btn"
+                        type="submit"
+                      >
+                        Получить презентацию
+                      </div>
+                      <div class="arrow-right">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                      </div>
+                    </button>
+                  </div>
+                </div>
+                <div class="form__policy from__policy-modal">
+                  <img src="./img/form/tick.svg" alt="tick" />
+                  <p>
+                    Я подтверждаю, что ознакомлен и даю согласие на обработку
+                    персональных данных на условиях и для целей, определяемых
+                    <span class="politicy">Политикой конфиденциальности</span>
+                  </p>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="popup popup-politicy popup-presentation">
+      <div
+        class="popup__wrapper popup-politicy__wrapper popup-presentation__wrapper"
+      >
+        <div
+          class="popup__inner popup-politicy__inner popup-presentation__inner"
+        >
+          <div
+            class="popup__content popup-politicy__content popup-presentation__content"
+          >
+            <button class="btn-close popup__btn-close popup-close"></button>
+            <div class="priv-policy priv-policy_modal">
+              <h2 class="priv-policy__title">
+                Политика конфиденциальности по обработке персональных данных
+              </h2>
+              <h3 class="priv-policy__subtitle">1. Общие положения</h3>
+              <p class="priv-policy__text">
+                Настоящая политика обработки персональных данных составлена в
+                соответствии с требованиями Федерального закона от 27.07.2006.
+                №152-ФЗ «О персональных данных» и определяет порядок обработки
+                персональных данных и меры по обеспечению безопасности
+                персональных данных.
+              </p>
+
+              <ol class="priv-policy__list">
+                <li class="priv-policy__item">
+                  1. Оператор ставит своей важнейшей целью и условием
+                  осуществления своей деятельности соблюдение прав и свобод
+                  человека и гражданина при обработке его персональных данных, в
+                  том числе защиты прав на неприкосновенность частной жизни,
+                  личную и семейную тайну.
+                </li>
+                <li class="priv-policy__item">
+                  2. Настоящая политика Оператора в отношении обработки
+                  персональных данных (далее – Политика) применяется ко всей
+                  информации, которую Оператор может получить о посетителях
+                  веб-сайта компании Max Dar Sound Security (полное ООО «СК
+                  МАКСДАР», ИНН 5262379949).
+                </li>
+              </ol>
+
+              <h3 class="priv-policy__subtitle">
+                2. Основные понятия, используемые в Политике
+              </h3>
+
+              <ol class="priv-policy__list">
+                <li class="priv-policy__item">
+                  1. Автоматизированная обработка персональных данных –
+                  обработка персональных данных с помощью средств вычислительной
+                  техники;
+                </li>
+                <li class="priv-policy__item">
+                  2. Блокирование персональных данных – временное прекращение
+                  обработки персональных данных (за исключением случаев, если
+                  обработка необходима для уточнения персональных данных);
+                </li>
+                <li class="priv-policy__item">
+                  3. Веб-сайт – совокупность графических и информационных
+                  материалов, а также программ для ЭВМ и баз данных,
+                  обеспечивающих их доступность в сети интернет по сетевому
+                  адресу
+                </li>
+                <li class="priv-policy__item">
+                  4. Информационная система персональных данных — совокупность
+                  содержащихся в базах данных персональных данных, и
+                  обеспечивающих их обработку информационных технологий и
+                  технических средств;
+                </li>
+                <li class="priv-policy__item">
+                  5. Обезличивание персональных данных — действия, в результате
+                  которых невозможно определить без использования дополнительной
+                  информации принадлежность персональных данных конкретному
+                  Пользователю или иному субъекту персональных данных;
+                </li>
+                <li class="priv-policy__item">
+                  6. Обработка персональных данных – любое действие (операция)
+                  или совокупность действий (операций), совершаемых с
+                  использованием средств автоматизации или без использования
+                  таких средств с персональными данными, включая сбор, запись,
+                  систематизацию, накопление, хранение, уточнение (обновление,
+                  изменение), извлечение, использование, передачу
+                  (распространение, предоставление, доступ), обезличивание,
+                  блокирование, удаление, уничтожение персональных данных;
+                </li>
+                <li class="priv-policy__item">
+                  7. Оператор – государственный орган, муниципальный орган,
+                  юридическое или физическое лицо, самостоятельно или совместно
+                  с другими лицами организующие и (или) осуществляющие обработку
+                  персональных данных, а также определяющие цели обработки
+                  персональных данных, состав персональных данных, подлежащих
+                  обработке, действия (операции), совершаемые с персональными
+                  данными;
+                </li>
+                <li class="priv-policy__item">
+                  8. Персональные данные – любая информация, относящаяся прямо
+                  или косвенно к определенному или определяемому Пользователю
+                  веб-сайта;
+                </li>
+                <li class="priv-policy__item">
+                  9. Пользователь – любой посетитель веб-сайта;
+                </li>
+                <li class="priv-policy__item">
+                  10. Предоставление персональных данных – действия,
+                  направленные на раскрытие персональных данных определенному
+                  лицу или определенному кругу лиц;
+                </li>
+                <li class="priv-policy__item">
+                  11. Распространение персональных данных – любые действия,
+                  направленные на раскрытие персональных данных неопределенному
+                  кругу лиц (передача персональных данных) или на ознакомление с
+                  персональными данными неограниченного круга лиц, в том числе
+                  обнародование персональных данных в средствах массовой
+                  информации, размещение в информационно-телекоммуникационных
+                  сетях или предоставление доступа к персональным данным
+                  каким-либо иным способом;
+                </li>
+                <li class="priv-policy__item">
+                  12. Трансграничная передача персональных данных – передача
+                  персональных данных на территорию иностранного государства
+                  органу власти иностранного государства, иностранному
+                  физическому или иностранному юридическому лицу;
+                </li>
+                <li class="priv-policy__item">
+                  13. Уничтожение персональных данных – любые действия, в
+                  результате которых персональные данные уничтожаются
+                  безвозвратно с невозможностью дальнейшего восстановления
+                  содержания персональных данных в информационной системе
+                  персональных данных и (или) результате которых уничтожаются
+                  материальные носители персональных данных.
+                </li>
+              </ol>
+
+              <h3 class="priv-policy__subtitle">
+                3. Оператор может обрабатывать следующие персональные данные
+                Пользователя
+              </h3>
+
+              <ol class="priv-policy__list">
+                <li class="priv-policy__item">1. Фамилия, имя, отчество;</li>
+                <li class="priv-policy__item">2. Номер телефона;</li>
+                <li class="priv-policy__item">3. Адрес электронной почты;</li>
+                <li class="priv-policy__item">
+                  4. Также на сайте происходит сбор и обработка обезличенных
+                  данных о посетителях (в т.ч. файлов «cookie») с помощью
+                  сервисов интернет-статистики (Яндекс Метрика и Гугл Аналитика
+                  и других).
+                </li>
+                <li class="priv-policy__item">
+                  5. Вышеперечисленные данные далее по тексту Политики
+                  объединены общим понятием Персональные данные.
+                </li>
+              </ol>
+
+              <h3 class="priv-policy__subtitle">
+                4. Цели обработки персональных данных
+              </h3>
+
+              <ol class="priv-policy__list">
+                <li class="priv-policy__item">
+                  1. Цель обработки персональных данных Пользователя —
+                  заключение, исполнение и прекращение гражданско-правовых
+                  договоров; предоставление доступа Пользователю к сервисам,
+                  информации и/или материалам, содержащимся на веб-сайте;
+                  уточнение деталей обращения.
+                </li>
+                <li class="priv-policy__item">
+                  2. Также Оператор имеет право направлять Пользователю
+                  уведомления о новых продуктах и услугах, специальных
+                  предложениях и различных событиях. Пользователь всегда может
+                  отказаться от получения информационных сообщений, направив
+                  Оператору письмо на адрес электронной почты с доменом
+                  dp@md-ss.ru с пометкой «Отказ от уведомлений о новых продуктах
+                  и услугах и специальных предложениях».
+                </li>
+                <li class="priv-policy__item">
+                  3. Обезличенные данные Пользователей, собираемые с помощью
+                  сервисов интернет-статистики, служат для сбора информации о
+                  действиях Пользователей на сайте, улучшения качества сайта и
+                  его содержания.
+                </li>
+              </ol>
+
+              <h3 class="priv-policy__subtitle">
+                5. Правовые основания обработки персональных данных
+              </h3>
+
+              <ol class="priv-policy__list">
+                <li class="priv-policy__item">
+                  1. Оператор обрабатывает персональные данные Пользователя
+                  только в случае их заполнения и/или отправки Пользователем
+                  самостоятельно через специальные формы, расположенные на
+                  сайте. Заполняя соответствующие формы и/или отправляя свои
+                  персональные данные Оператору, Пользователь выражает свое
+                  согласие с данной Политикой.
+                </li>
+                <li class="priv-policy__item">
+                  2. Оператор обрабатывает обезличенные данные о Пользователе в
+                  случае, если это разрешено в настройках браузера Пользователя
+                  (включено сохранение файлов «cookie» и использование
+                  технологии JavaScript).
+                </li>
+              </ol>
+
+              <h3 class="priv-policy__subtitle">
+                6. Порядок сбора, хранения, передачи и других видов обработки
+                персональных данных
+              </h3>
+
+              <p class="priv-policy__text">
+                Безопасность персональных данных, которые обрабатываются
+                Оператором, обеспечивается путем реализации правовых,
+                организационных и технических мер, необходимых для выполнения в
+                полном объеме требований действующего законодательства в области
+                защиты персональных данных.
+              </p>
+
+              <ol class="priv-policy__list">
+                <li class="priv-policy__item">
+                  1. Оператор обеспечивает сохранность персональных данных и
+                  принимает все возможные меры, исключающие доступ к
+                  персональным данным неуполномоченных лиц.
+                </li>
+                <li class="priv-policy__item">
+                  2. Персональные данные Пользователя никогда, ни при каких
+                  условиях не будут переданы третьим лицам, за исключением
+                  случаев, связанных с исполнением действующего
+                  законодательства.
+                </li>
+                <li class="priv-policy__item">
+                  3. Срок обработки персональных данных является неограниченным.
+                  Пользователь может в любой момент отозвать свое согласие на
+                  обработку персональных данных, направив Оператору уведомление
+                  посредством электронной почты на электронный адрес Оператора с
+                  пометкой «Отзыв согласия на обработку персональных данных».
+                </li>
+              </ol>
+
+              <h3 class="priv-policy__subtitle">
+                7. Трансграничная передача персональных данных
+              </h3>
+
+              <ol class="priv-policy__list">
+                <li class="priv-policy__item">
+                  1. Оператор до начала осуществления трансграничной передачи
+                  персональных данных обязан убедиться в том, что иностранным
+                  государством, на территорию которого предполагается
+                  осуществлять передачу персональных данных, обеспечивается
+                  надежная защита прав субъектов персональных данных.
+                </li>
+                <li class="priv-policy__item">
+                  2. Трансграничная передача персональных данных на территории
+                  иностранных государств, не отвечающих вышеуказанным
+                  требованиям, может осуществляться только в случае наличия
+                  согласия в письменной форме субъекта персональных данных на
+                  трансграничную передачу его персональных данных и/или
+                  исполнения договора, стороной которого является субъект
+                  персональных данных.
+                </li>
+              </ol>
+
+              <h3 class="priv-policy__subtitle">8. Заключительные положения</h3>
+
+              <ol class="priv-policy__list">
+                <li class="priv-policy__item">
+                  1. Пользователь может получить любые разъяснения по
+                  интересующим вопросам, касающимся обработки его персональных
+                  данных, обратившись к Оператору по телефону, указанному на
+                  сайте.
+                </li>
+                <li class="priv-policy__item">
+                  2. В данном документе будут отражены любые изменения политики
+                  обработки персональных данных Оператором. Политика действует
+                  бессрочно до замены ее новой версией.
+                </li>
+                <li class="priv-policy__item">
+                  3. Актуальная версия Политики в свободном доступе расположена
+                  в сети Интернет на сайте.
+                </li>
+              </ol>
+              <button class="popup-close politicy-close button">
+                Вернуться на сайт
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </body>
 </html>

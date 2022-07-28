@@ -1,4 +1,5 @@
 document.addEventListener("DOMContentLoaded", function () {
+  
   function handlePosition() {
     let position = 0;
     const slidesToShow = 1;

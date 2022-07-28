@@ -15,8 +15,10 @@ document.addEventListener("DOMContentLoaded", function(){
    const supportItem = document.querySelectorAll('.support__tab-item');
    const supportContent = document.querySelectorAll('.support__content');
 
+   const sliderItem = document.querySelectorAll('.work__slider-item');
 
-   function tabChanger(item, content) {
+
+   function tabChanger(item, content, slider) {
       item.forEach((tab, index) => {
          tab.addEventListener('click', function(){
             content.forEach(content => {
@@ -25,14 +27,22 @@ document.addEventListener("DOMContentLoaded", function(){
             item.forEach(tab => {
                tab.classList.remove('active');
             })
+            if (slider) {
+               slider.forEach(slide => {
+                  slide.classList.remove('active')
+               })
+               slider[index].classList.add('active'); 
+            }
+            
             content[index].classList.add('active');
-            item[index].classList.add('active');   
+            item[index].classList.add('active'); 
+            
          })
       })
    }
    tabChanger(tabItem, tabContent);
    tabChanger(stageItem, stageContent);
-   tabChanger(workItem, workContent);
+   tabChanger(workItem, workContent, sliderItem);
    tabChanger(startupItem, startupContent);
    tabChanger(supportItem, supportContent);
 

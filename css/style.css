@@ -458,7 +458,7 @@ body {
     font-size: 20px;
 }
   .main__title {
-    padding-top: 105px;
+    padding-top: 80px;
   }
   .main__subtitle {
     padding-bottom: 20px;
@@ -1192,6 +1192,7 @@ body {
   line-height: 25px;
   color: #72747b;
   padding-bottom: 30px;
+  position: relative;
 }
 .facts__content {
   display: flex;
@@ -2722,7 +2723,7 @@ body {
   .support__content {
     flex-direction: column;
     max-width: 600px;
-    margin: 0 auto;
+    margin: 0 auto 15px;
   }
 }
 @media (max-width: 826px) {
@@ -3111,7 +3112,7 @@ body {
     padding-top: 350px;
 }
 .client__quotation-mark{
-  left: -45px;
+  left: -58px;
   top: -25px;
 }
 .manager__photo{
@@ -3251,8 +3252,7 @@ body {
   margin-left: 17.5px;
 }
 .footer__logo{
-  width: 77px;
-  height: 31px;
+  object-fit: contain;
 }
 .footer__second-block {
   padding-top: 3px;

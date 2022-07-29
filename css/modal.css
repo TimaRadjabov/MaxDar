@@ -266,7 +266,7 @@
 	padding: 40px;
 }
 .popup-presentation__title {
-	font-size: 20px;
+	font-size: 17px;
 	line-height: 125%;
 	color: #1a1917;
 }
@@ -439,6 +439,20 @@
 		padding: 10px 0px;
 		margin: 0;
 	}
+  .popup-exit .popup-presentation__title {
+    font-size: 17px;
+}
+.popup-presentation-descrip {
+  width: 314px;
+  font-size: 16px;
+  line-height: 120%;
+  margin: 0 auto;
+text-align: center;
+padding-bottom: 10px;
+}
+#third__modal {
+  background: #fff;
+}
 }
 @media (max-width: 800px) {
   #first__modal {

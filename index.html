@@ -11,11 +11,15 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
 
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link rel="shortcut icon" href="#" type="image/x-icon" />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
 
     <link
       href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:ital,wght@0,600;0,700;1,400;1,500&display=swap"
       rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css"
     />
     <link rel="stylesheet" href="css/reset.css" />
     <link rel="stylesheet" href="css/button.css" />
@@ -58,22 +62,21 @@
         </div>
       </header>
       <div class="page__content">
-        <main class="main__content ">
+        <main class="main__content">
           <div class="container">
             <h1 class="main__title title wow fadeInLeft">
               Проектирование и&nbsp;реализация шумоизоляционных решений
               по&nbsp;франшизе MaxDar Sound Security
             </h1>
-            <h3 class="main__subtitle subtitle  wow fadeInLeft">
+            <h3 class="main__subtitle subtitle wow fadeInLeft">
               с чистой прибылью <span>от 300 000 рублей и выше</span>
             </h3>
-            <p class="main__descr  wow fadeInLeft">
-              Откройте павильон в&nbsp;торговом центре, чтобы зарабатывать
-              <span>до 300 000 ₽ ежемесячно</span><br />
-              на&nbsp;комплексной шумоизоляции зданий для корпоративных
-              и&nbsp;частных клиентов
+            <p class="main__descr wow fadeInLeft">
+              Откройте павильон в торговом центре, чтобы зарабатывать на
+              комплексной шумоизоляции помещений для корпоративных и частных
+              клиентов
             </p>
-            <div class="main__list  wow fadeInLeft">
+            <div class="main__list wow fadeInLeft">
               <div class="main__item">
                 <div class="main__item-icon">
                   <img src="./img/main/01.svg" alt="icon" />
@@ -246,10 +249,10 @@
         </main>
         <section class="section__model">
           <div class="container">
-            <h2 class="section__title wow fadeInUp ">
-              <span >Бизнес-модель по&nbsp;франшизе MaxDar Sound Security</span>
+            <h2 class="section__title wow fadeInUp">
+              <span>Бизнес-модель по&nbsp;франшизе MaxDar Sound Security</span>
             </h2>
-            <p class="model__descr wow fadeInUp ">
+            <p class="model__descr wow fadeInUp">
               По&nbsp;франшизе MaxDar Sound Security предусмотрена
               бизнес-модель, в&nbsp;рамках которой предлагается полный спектр
               услуг по&nbsp;шумоизоляции&nbsp;&mdash; от&nbsp;выездного замера
@@ -260,8 +263,8 @@
             </p>
             <div class="model__content">
               <div class="model__item wow fadeInLeft">
-                <div class="model__first-descr ">
-                  <p >
+                <div class="model__first-descr">
+                  <p>
                     Торговая точка представляет собой розничный магазин
                     в&nbsp;строительном торговом центре, именно здесь
                     концентрируется основной поток клиентов.
@@ -273,7 +276,7 @@
                   class="modal__vector"
                 />
               </div>
-              <div class="model__item  wow fadeInRight">
+              <div class="model__item wow fadeInRight">
                 <div class="model__first-descr">
                   <p>
                     Для увеличения объёма продаж параллельно
@@ -313,24 +316,28 @@
                 </nav>
                 <div class="tab__body">
                   <div class="tab__block first active">
+                    <div class="first__tab-photos">
+                      <img
+                        src="./img/model/first-tab.png"
+                        alt="first"
+                        class="first__tab"
+                      />
+                      <img
+                        src="./img/model/mask.png"
+                        alt="first"
+                        class="first__mask"
+                      />
+                      <img src="./img/model/01.jpg" alt="01" class="adaptive__img-01">
+                    </div>
                     <p class="tab__descr">
                       Розничные клиенты со&nbsp;средним и&nbsp;выше среднего
                       доходом, динамичным графиком работы, желающие повысить
                       уровень комфорта в&nbsp;уже имеющемся или приобретаемом
                       жилье.
                     </p>
-                    <img
-                      src="./img/model/first-tab.png"
-                      alt="first"
-                      class="first__tab"
-                    />
-                    <img
-                      src="./img/model/mask.png"
-                      alt="first"
-                      class="first__mask"
-                    />
                   </div>
                   <div class="tab__block second">
+                    <img src="./img/model/02.jpg" alt="01" class="adaptive__img-01">
                     <p class="tab__descr">
                       Оптовые организации или индивидуальные предприниматели,
                       специализирующиеся на реализации стройматериалов или
@@ -346,6 +353,7 @@
                       alt="first"
                       class="first__mask"
                     />
+                    
                   </div>
                 </div>
               </div>
@@ -455,19 +463,16 @@
                           помещений
                         </h3>
                         <h5 class="human__subtitle">
-                          Защита от структурного шума
+                          Защита от&nbsp;ударного шума
                         </h5>
                         <p class="human__descr readiness__slider-descr">
-                          Шум образуется от&nbsp;вибраций, распространяющихся по
-                          конструкциям здания. Источником могут стать инженерное
-                          оборудование (лифты) или строительный инструмент. Как
-                          показывает практика, в&nbsp;дополнительной
-                          звукоизоляции особенно нуждаются ограждающие
-                          конструкции между квартирами.
+                          Такой звук образуется при падении тяжёлых предметов,
+                          перемещении мебели, ударах по&nbsp;стене. Ударный шум
+                          передаётся зачастую через межэтажные перекрытия.
                         </p>
                         <img
-                          src="./img/readiness/03.svg"
-                          alt="03"
+                          src="./img/readiness/01.svg"
+                          alt="01"
                           class="readiness__number"
                         />
                       </div>
@@ -496,26 +501,29 @@
                           помещений
                         </h3>
                         <h5 class="human__subtitle">
-                          Защита от&nbsp;ударного шума
+                          Защита от структурного шума
                         </h5>
                         <p class="human__descr readiness__slider-descr">
-                          Такой звук образуется при падении тяжёлых предметов,
-                          перемещении мебели, ударах по&nbsp;стене. Ударный шум
-                          передаётся зачастую через межэтажные перекрытия.
+                          Шум образуется от&nbsp;вибраций, распространяющихся по
+                          конструкциям здания. Источником могут стать инженерное
+                          оборудование (лифты) или строительный инструмент. Как
+                          показывает практика, в&nbsp;дополнительной
+                          звукоизоляции особенно нуждаются ограждающие
+                          конструкции между квартирами.
                         </p>
                         <img
-                          src="./img/readiness/01.svg"
-                          alt="01"
+                          src="./img/readiness/03.svg"
+                          alt="03"
                           class="readiness__number"
                         />
                       </div>
                     </div>
                   </div>
                   <div class="readiness__btns">
-                    <div class="top__btn">
+                    <div class="bottom__btn">
                       <img src="./img/readiness/top.svg" alt="arrow" />
                     </div>
-                    <div class="bottom__btn">
+                    <div class="top__btn">
                       <img src="./img/readiness/bottom.svg" alt="arrow" />
                     </div>
                   </div>
@@ -1146,10 +1154,10 @@
                   </div>
                 </div>
                 <div class="readiness__btns">
-                  <div class="next__btn">
+                  <div class="prev__btn">
                     <img src="./img/readiness/top.svg" alt="arrow" />
                   </div>
-                  <div class="prev__btn">
+                  <div class="next__btn">
                     <img src="./img/readiness/bottom.svg" alt="arrow" />
                   </div>
                 </div>
@@ -1159,29 +1167,35 @@
               </h3>
               <div class="certificate__list wow fadeInUp">
                 <div class="certificate__item">
-                  <img
-                    src="./img/sales/first.jpg"
-                    alt="certificate"
-                    class="certificate__photo"
-                  />
+                  <a href="./img/sales/first.jpg" data-fancybox="images" data-caption="" data-width="1000" data-height="700">
+                    <img
+                          src="./img/sales/first.jpg"
+                          alt="certificate"
+                          class="certificate__photo"
+                        />
+                   </a>
                   <h5 class="certificate__title">Сертификат соответствия</h5>
                 </div>
                 <div class="certificate__item">
-                  <img
-                    src="./img/sales/second.jpg"
-                    alt="certificate"
-                    class="certificate__photo"
-                  />
+                  <a href="./img/sales/second.jpg" data-fancybox="images" data-caption="" data-width="1000" data-height="700">
+                    <img
+                          src="./img/sales/second.jpg"
+                          alt="certificate"
+                          class="certificate__photo"
+                        />
+                   </a>
                   <h5 class="certificate__title">
                     Пожарный сертификат соответствия
                   </h5>
                 </div>
                 <div class="certificate__item">
-                  <img
-                    src="./img/sales/third.jpg"
-                    alt="certificate"
-                    class="certificate__photo"
-                  />
+                  <a href="./img/sales/third.jpg" data-fancybox="images" data-caption="" data-width="1000" data-height="700">
+                    <img
+                          src="./img/sales/third.jpg"
+                          alt="certificate"
+                          class="certificate__photo"
+                        />
+                   </a>
                   <h5 class="certificate__title">Гигиенический сертификат</h5>
                 </div>
               </div>
@@ -1281,10 +1295,10 @@
               </h4>
               <div class="schema__stages wow fadeInUpBig">
                 <div class="stages__tabs">
-                  <div class="stages__circle" id="tab_01">
+                  <div class="stages__circle active" id="tab_01">
                     <div class="stages__tab">1</div>
                   </div>
-                  <div class="stages__circle active" id="tab_02">
+                  <div class="stages__circle" id="tab_02">
                     <div class="stages__tab">2</div>
                   </div>
                   <div class="stages__circle" id="tab_03">
@@ -1296,7 +1310,7 @@
                 </div>
                 <img src="./img/stages/room.png" alt="room" class="room" />
                 <div class="stages__content">
-                  <div class="stages__elem">
+                  <div class="stages__elem active">
                     <div class="elem__top">
                       <img
                         src="./img/stages/1.svg"
@@ -1313,7 +1327,7 @@
                       с&nbsp;другим клиентом.
                     </p>
                   </div>
-                  <div class="stages__elem active">
+                  <div class="stages__elem">
                     <div class="elem__top">
                       <img
                         src="./img/stages/2.svg"
@@ -1374,6 +1388,7 @@
                     </p>
                   </div>
                 </div>
+                <img src="./img/stages/room.png" alt="room" class="adaptive__room" />
               </div>
               <div class="model__item stages__item">
                 <div class="stages__descr wow fadeInLeft">
@@ -1418,290 +1433,293 @@
                     <div class="work__slider-item"></div>
                   </div>
                 </div>
-                <div class="work__content active">
-                  <div class="work__photo-block">
-                    <img
-                      src="./img/work/01.jpg"
-                      alt="work"
-                      class="work__photo"
-                    />
-                  </div>
-                  <div class="work__tab-descr">
-                    <div class="work__top">
-                      <div class="top__city">
-                        <p>Город</p>
-                        <p>Нижний Новгород</p>
+                <div class="work__content-slider">
+                  <div class="work__content active">
+                    <div class="work__photo-block">
+                      <img
+                        src="./img/work/01.jpg"
+                        alt="work"
+                        class="work__photo"
+                      />
+                    </div>
+                    <div class="work__tab-descr">
+                      <div class="work__top">
+                        <div class="top__city">
+                          <p>Город</p>
+                          <p>Нижний Новгород</p>
+                        </div>
+                        <div class="top__task">
+                          <p>Задача</p>
+                          <p>
+                            Звукоизоляция межквартирных стен и&nbsp;потолков для
+                            ликвидации ударного шума между этажами.
+                          </p>
+                        </div>
                       </div>
-                      <div class="top__task">
-                        <p>Задача</p>
-                        <p>
-                          Звукоизоляция межквартирных стен и&nbsp;потолков для
-                          ликвидации ударного шума между этажами.
+                      <div class="work__middle">
+                        <p class="work__materials">
+                          Какие материалы были использованы
                         </p>
-                      </div>
-                    </div>
-                    <div class="work__middle">
-                      <p class="work__materials">
-                        Какие материалы были использованы
-                      </p>
-                      <p class="materials__name">SoundGuard</p>
-                      <div class="materials__list">
-                        <div>
-                          <div class="materials__item">
-                            <img src="./img/work/tick.svg" alt="tick" />
-                            <p>
-                              Виброподвесы SG Protektor, Vibro M, Vibro P, Vibro
-                              PL
-                            </p>
+                        <p class="materials__name">SoundGuard</p>
+                        <div class="materials__list">
+                          <div>
+                            <div class="materials__item">
+                              <img src="./img/work/tick.svg" alt="tick" />
+                              <p>
+                                Виброподвесы SG Protektor, Vibro M, Vibro P,
+                                Vibro PL
+                              </p>
+                            </div>
+                            <div class="materials__item">
+                              <img src="./img/work/tick.svg" alt="tick" />
+                              <p>Демпферная лента Вибролента 27мм, 50мм</p>
+                            </div>
+                            <div class="materials__item">
+                              <img src="./img/work/tick.svg" alt="tick" />
+                              <p>Демпферная подложка Vibroroll</p>
+                            </div>
+                            <div class="materials__item">
+                              <img src="./img/work/tick.svg" alt="tick" />
+                              <p>Минеральная плита SG Basalt 50, Экоакустик</p>
+                            </div>
+                            <div class="materials__item">
+                              <img src="./img/work/tick.svg" alt="tick" />
+                              <p>Герметик SG Seal</p>
+                            </div>
                           </div>
-                          <div class="materials__item">
-                            <img src="./img/work/tick.svg" alt="tick" />
-                            <p>Демпферная лента Вибролента 27мм, 50мм</p>
-                          </div>
-                          <div class="materials__item">
-                            <img src="./img/work/tick.svg" alt="tick" />
-                            <p>Демпферная подложка Vibroroll</p>
-                          </div>
-                          <div class="materials__item">
-                            <img src="./img/work/tick.svg" alt="tick" />
-                            <p>Минеральная плита SG Basalt 50, Экоакустик</p>
-                          </div>
-                          <div class="materials__item">
-                            <img src="./img/work/tick.svg" alt="tick" />
-                            <p>Герметик SG Seal</p>
-                          </div>
-                        </div>
-                        <div>
-                          <div class="materials__item">
-                            <img src="./img/work/tick.svg" alt="tick" />
-                            <p>
-                              Звукоизоляционные кварцевые панели Экозвукоизол,
-                              Премиум
-                            </p>
-                          </div>
-                          <div class="materials__item">
-                            <img src="./img/work/tick.svg" alt="tick" />
-                            <p>Гипсокартон Gipsofon</p>
-                          </div>
-                          <div class="materials__item">
-                            <img src="./img/work/tick.svg" alt="tick" />
-                            <p>Специальные подрозетники Изобокс</p>
-                          </div>
-                          <div class="materials__item">
-                            <img src="./img/work/tick.svg" alt="tick" />
-                            <p>
-                              Шумопоглощающий Мат ИзоКовер для пола
-                              и&nbsp;потолка
-                            </p>
+                          <div>
+                            <div class="materials__item">
+                              <img src="./img/work/tick.svg" alt="tick" />
+                              <p>
+                                Звукоизоляционные кварцевые панели Экозвукоизол,
+                                Премиум
+                              </p>
+                            </div>
+                            <div class="materials__item">
+                              <img src="./img/work/tick.svg" alt="tick" />
+                              <p>Гипсокартон Gipsofon</p>
+                            </div>
+                            <div class="materials__item">
+                              <img src="./img/work/tick.svg" alt="tick" />
+                              <p>Специальные подрозетники Изобокс</p>
+                            </div>
+                            <div class="materials__item">
+                              <img src="./img/work/tick.svg" alt="tick" />
+                              <p>
+                                Шумопоглощающий Мат ИзоКовер для пола
+                                и&nbsp;потолка
+                              </p>
+                            </div>
                           </div>
                         </div>
                       </div>
-                    </div>
-                    <div class="work__bottom">
-                      <div class="work__amount">
-                        <p>Общий метраж звукоизоляции</p>
-                        <p>300 кв. м.</p>
-                      </div>
-                      <div class="work__prise">
-                        <p>Сумма реализованного проекта</p>
-                        <h6>1 500 000 руб.</h6>
+                      <div class="work__bottom">
+                        <div class="work__amount">
+                          <p>Общий метраж звукоизоляции</p>
+                          <p>300 кв. м.</p>
+                        </div>
+                        <div class="work__prise">
+                          <p>Сумма реализованного проекта</p>
+                          <h6>1 500 000 руб.</h6>
+                        </div>
                       </div>
                     </div>
                   </div>
-                </div>
-                <div class="work__content">
-                  <div class="work__photo-block">
-                    <img
-                      src="./img/work/02.jpg"
-                      alt="work"
-                      class="work__photo"
-                    />
-                  </div>
-                  <div class="work__tab-descr">
-                    <div class="work__top">
-                      <div class="top__city">
-                        <p>Город</p>
-                        <p>Нижний Новгород</p>
+                  <div class="work__content">
+                    <div class="work__photo-block">
+                      <img
+                        src="./img/work/02.jpg"
+                        alt="work"
+                        class="work__photo"
+                      />
+                    </div>
+                    <div class="work__tab-descr">
+                      <div class="work__top">
+                        <div class="top__city">
+                          <p>Город</p>
+                          <p>Нижний Новгород</p>
+                        </div>
+                        <div class="top__task">
+                          <p>Задача</p>
+                          <p>
+                            Звукоизоляция потолков, межквартирных
+                            и&nbsp;межкомнатных стен, шумоизоляция пола под
+                            стяжку.
+                          </p>
+                        </div>
                       </div>
-                      <div class="top__task">
-                        <p>Задача</p>
-                        <p>
-                          Звукоизоляция потолков, межквартирных
-                          и&nbsp;межкомнатных стен, шумоизоляция пола под
-                          стяжку.
+                      <div class="work__middle">
+                        <p class="work__materials">
+                          Какие материалы были использованы
                         </p>
-                      </div>
-                    </div>
-                    <div class="work__middle">
-                      <p class="work__materials">
-                        Какие материалы были использованы
-                      </p>
-                      <p class="materials__name">SoundGuard</p>
-                      <div class="materials__list">
-                        <div>
-                          <div class="materials__item">
-                            <img src="./img/work/tick.svg" alt="tick" />
-                            <p>
-                              Виброподвесы SG Protektor, Vibro M, Vibro P, Vibro
-                              PL
-                            </p>
+                        <p class="materials__name">SoundGuard</p>
+                        <div class="materials__list">
+                          <div>
+                            <div class="materials__item">
+                              <img src="./img/work/tick.svg" alt="tick" />
+                              <p>
+                                Виброподвесы SG Protektor, Vibro M, Vibro P,
+                                Vibro PL
+                              </p>
+                            </div>
+                            <div class="materials__item">
+                              <img src="./img/work/tick.svg" alt="tick" />
+                              <p>Демпферная лента Вибролента 27мм, 50мм</p>
+                            </div>
+                            <div class="materials__item">
+                              <img src="./img/work/tick.svg" alt="tick" />
+                              <p>Демпферная подложка Vibroroll</p>
+                            </div>
+                            <div class="materials__item">
+                              <img src="./img/work/tick.svg" alt="tick" />
+                              <p>Минеральная плита SG Basalt 50, Экоакустик</p>
+                            </div>
+                            <div class="materials__item">
+                              <img src="./img/work/tick.svg" alt="tick" />
+                              <p>Герметик SG Seal</p>
+                            </div>
                           </div>
-                          <div class="materials__item">
-                            <img src="./img/work/tick.svg" alt="tick" />
-                            <p>Демпферная лента Вибролента 27мм, 50мм</p>
-                          </div>
-                          <div class="materials__item">
-                            <img src="./img/work/tick.svg" alt="tick" />
-                            <p>Демпферная подложка Vibroroll</p>
-                          </div>
-                          <div class="materials__item">
-                            <img src="./img/work/tick.svg" alt="tick" />
-                            <p>Минеральная плита SG Basalt 50, Экоакустик</p>
-                          </div>
-                          <div class="materials__item">
-                            <img src="./img/work/tick.svg" alt="tick" />
-                            <p>Герметик SG Seal</p>
-                          </div>
-                        </div>
-                        <div>
-                          <div class="materials__item">
-                            <img src="./img/work/tick.svg" alt="tick" />
-                            <p>
-                              Звукоизоляционные кварцевые панели Экозвукоизол,
-                              Премиум
-                            </p>
-                          </div>
-                          <div class="materials__item">
-                            <img src="./img/work/tick.svg" alt="tick" />
-                            <p>Гипсокартон Gipsofon</p>
-                          </div>
-                          <div class="materials__item">
-                            <img src="./img/work/tick.svg" alt="tick" />
-                            <p>Специальные подрозетники Изобокс</p>
-                          </div>
-                          <div class="materials__item">
-                            <img src="./img/work/tick.svg" alt="tick" />
-                            <p>
-                              Шумопоглощающий Мат ИзоКовер для пола
-                              и&nbsp;потолка
-                            </p>
+                          <div>
+                            <div class="materials__item">
+                              <img src="./img/work/tick.svg" alt="tick" />
+                              <p>
+                                Звукоизоляционные кварцевые панели Экозвукоизол,
+                                Премиум
+                              </p>
+                            </div>
+                            <div class="materials__item">
+                              <img src="./img/work/tick.svg" alt="tick" />
+                              <p>Гипсокартон Gipsofon</p>
+                            </div>
+                            <div class="materials__item">
+                              <img src="./img/work/tick.svg" alt="tick" />
+                              <p>Специальные подрозетники Изобокс</p>
+                            </div>
+                            <div class="materials__item">
+                              <img src="./img/work/tick.svg" alt="tick" />
+                              <p>
+                                Шумопоглощающий Мат ИзоКовер для пола
+                                и&nbsp;потолка
+                              </p>
+                            </div>
                           </div>
                         </div>
                       </div>
-                    </div>
-                    <div class="work__middle">
-                      <p class="materials__name">Acoustic Group</p>
-                      <div class="materials__list">
-                        <div>
-                          <div class="materials__item">
-                            <img src="./img/work/tick.svg" alt="tick" />
-                            <p>
-                              Виброподвесы AG Коннект ПП, Коннект ПС, Коннект
-                              КС, К-15
-                            </p>
+                      <div class="work__middle">
+                        <p class="materials__name">Acoustic Group</p>
+                        <div class="materials__list">
+                          <div>
+                            <div class="materials__item">
+                              <img src="./img/work/tick.svg" alt="tick" />
+                              <p>
+                                Виброподвесы AG Коннект ПП, Коннект ПС, Коннект
+                                КС, К-15
+                              </p>
+                            </div>
+                            <div class="materials__item">
+                              <img src="./img/work/tick.svg" alt="tick" />
+                              <p>Демпферная лента Вибростек 100мм,150мм</p>
+                            </div>
+                            <div class="materials__item">
+                              <img src="./img/work/tick.svg" alt="tick" />
+                              <p>Триплекс Панель Саундлайн db</p>
+                            </div>
+                            <div class="materials__item">
+                              <img src="./img/work/tick.svg" alt="tick" />
+                              <p>ЗИПС Модуль</p>
+                            </div>
                           </div>
-                          <div class="materials__item">
-                            <img src="./img/work/tick.svg" alt="tick" />
-                            <p>Демпферная лента Вибростек 100мм,150мм</p>
-                          </div>
-                          <div class="materials__item">
-                            <img src="./img/work/tick.svg" alt="tick" />
-                            <p>Триплекс Панель Саундлайн db</p>
-                          </div>
-                          <div class="materials__item">
-                            <img src="./img/work/tick.svg" alt="tick" />
-                            <p>ЗИПС Модуль</p>
-                          </div>
-                        </div>
-                        <div>
-                          <div class="materials__item">
-                            <img src="./img/work/tick.svg" alt="tick" />
-                            <p>
-                              Панели для бескаркасной звукоизоляции ЗИПС
-                              III-Ультра, ЗИПС Z4
-                            </p>
-                          </div>
-                          <div class="materials__item">
-                            <img src="./img/work/tick.svg" alt="tick" />
-                            <p>Герметик Вибросил</p>
-                          </div>
-                          <div class="materials__item">
-                            <img src="./img/work/tick.svg" alt="tick" />
-                            <p>ССпециальные подрозетники УльтрАкустик</p>
+                          <div>
+                            <div class="materials__item">
+                              <img src="./img/work/tick.svg" alt="tick" />
+                              <p>
+                                Панели для бескаркасной звукоизоляции ЗИПС
+                                III-Ультра, ЗИПС Z4
+                              </p>
+                            </div>
+                            <div class="materials__item">
+                              <img src="./img/work/tick.svg" alt="tick" />
+                              <p>Герметик Вибросил</p>
+                            </div>
+                            <div class="materials__item">
+                              <img src="./img/work/tick.svg" alt="tick" />
+                              <p>ССпециальные подрозетники УльтрАкустик</p>
+                            </div>
                           </div>
                         </div>
                       </div>
-                    </div>
-                    <div class="work__bottom">
-                      <div class="work__amount">
-                        <p>Общий метраж звукоизоляции</p>
-                        <p>800 кв. м.</p>
-                      </div>
-                      <div class="work__prise">
-                        <p>Сумма реализованного проекта</p>
-                        <h6>4 000 000 руб.</h6>
+                      <div class="work__bottom">
+                        <div class="work__amount">
+                          <p>Общий метраж звукоизоляции</p>
+                          <p>800 кв. м.</p>
+                        </div>
+                        <div class="work__prise">
+                          <p>Сумма реализованного проекта</p>
+                          <h6>4 000 000 руб.</h6>
+                        </div>
                       </div>
                     </div>
                   </div>
-                </div>
-                <div class="work__content">
-                  <div class="work__photo-block">
-                    <img
-                      src="./img/work/03.jpg"
-                      alt="work"
-                      class="work__photo"
-                    />
-                  </div>
-                  <div class="work__tab-descr">
-                    <div class="work__top">
-                      <div class="top__city">
-                        <p>Город</p>
-                        <p>Нижний Новгород</p>
-                      </div>
-                      <div class="top__task">
-                        <p>Задача</p>
-                        <p>Полная шумоизоляция</p>
-                      </div>
+                  <div class="work__content">
+                    <div class="work__photo-block">
+                      <img
+                        src="./img/work/03.jpg"
+                        alt="work"
+                        class="work__photo"
+                      />
                     </div>
-                    <div class="work__middle">
-                      <p class="work__materials">
-                        Какие материалы были использованы
-                      </p>
-                      <div class="materials__block">
-                        <p class="materials__name">
-                          Потолок выполнен по&nbsp;каркасной технологии
-                          SoundGuard с использованием:
-                        </p>
-                        <p class="materials__name">
-                          Стены выполнены по&nbsp;бескаркасной технологии
-                          Acoustic Group с&nbsp;материалами Саундлайн ПГП Супер.
-                        </p>
+                    <div class="work__tab-descr">
+                      <div class="work__top">
+                        <div class="top__city">
+                          <p>Город</p>
+                          <p>Нижний Новгород</p>
+                        </div>
+                        <div class="top__task">
+                          <p>Задача</p>
+                          <p>Полная шумоизоляция</p>
+                        </div>
                       </div>
-                      <div class="materials__list">
-                        <div>
-                          <div class="materials__item">
-                            <img src="./img/work/tick.svg" alt="tick" />
-                            <p>Плотной минеральной плиты SG Basalt</p>
-                          </div>
-                          <div class="materials__item">
-                            <img src="./img/work/tick.svg" alt="tick" />
-                            <p>Виброподвесов Vibro P</p>
-                          </div>
-                          <div class="materials__item">
-                            <img src="./img/work/tick.svg" alt="tick" />
-                            <p>Кварцевых панелей Экозвукоизол</p>
+                      <div class="work__middle">
+                        <p class="work__materials">
+                          Какие материалы были использованы
+                        </p>
+                        <div class="materials__block">
+                          <p class="materials__name">
+                            Потолок выполнен по&nbsp;каркасной технологии
+                            SoundGuard с использованием:
+                          </p>
+                          <p class="materials__name">
+                            Стены выполнены по&nbsp;бескаркасной технологии
+                            Acoustic Group с&nbsp;материалами Саундлайн ПГП
+                            Супер.
+                          </p>
+                        </div>
+                        <div class="materials__list">
+                          <div>
+                            <div class="materials__item">
+                              <img src="./img/work/tick.svg" alt="tick" />
+                              <p>Плотной минеральной плиты SG Basalt</p>
+                            </div>
+                            <div class="materials__item">
+                              <img src="./img/work/tick.svg" alt="tick" />
+                              <p>Виброподвесов Vibro P</p>
+                            </div>
+                            <div class="materials__item">
+                              <img src="./img/work/tick.svg" alt="tick" />
+                              <p>Кварцевых панелей Экозвукоизол</p>
+                            </div>
                           </div>
                         </div>
                       </div>
-                    </div>
-                    <div class="work__bottom">
-                      <div class="work__amount">
-                        <p>Общий метраж звукоизоляции</p>
-                        <p>120 кв. м.</p>
-                      </div>
-                      <div class="work__prise">
-                        <p>Сумма реализованного проекта</p>
-                        <h6>450 000 руб.</h6>
+                      <div class="work__bottom">
+                        <div class="work__amount">
+                          <p>Общий метраж звукоизоляции</p>
+                          <p>120 кв. м.</p>
+                        </div>
+                        <div class="work__prise">
+                          <p>Сумма реализованного проекта</p>
+                          <h6>450 000 руб.</h6>
+                        </div>
                       </div>
                     </div>
                   </div>
@@ -2029,7 +2047,7 @@
               </p>
               <div class="socials__block">
                 <div class="socials__item wow fadeInLeft">
-                  <div class="socials__item-title ">Telegram-канал</div>
+                  <div class="socials__item-title">Telegram-канал</div>
                   <ul class="socials__list">
                     <li class="socials__list-item">
                       Фотографии готовых объектов;
@@ -2057,7 +2075,7 @@
                       Отчёты с мастер-классов и др.
                     </li>
                   </ul>
-                  <a href="#" class="socials__portfolio"> Перейти на канал </a>
+                  <a href="https://www.youtube.com/channel/UCJZ3tU3CVVN_T6oX4x-h0AQ" target="_blank" class="socials__portfolio"> Перейти на канал </a>
                 </div>
               </div>
               <img
@@ -2065,6 +2083,7 @@
                 alt="gadjets"
                 class="gadjets"
               />
+
               <img src="./img/socials/table.png" alt="table" class="table" />
             </div>
           </div>
@@ -2073,7 +2092,7 @@
           <div class="container">
             <div class="startup__body">
               <h2 class="section__title wow fadeInLeft">
-                <span class="first__title "
+                <span class="first__title"
                   >Запуск бизнеса за&nbsp;30&nbsp;дней
                   в&nbsp;5&nbsp;этапов</span
                 ><span>при полноценной поддержке головной компании</span>
@@ -2570,11 +2589,11 @@
                 <span class="first__title">Направления поддержки</span
                 ><span>головной компанией MaxDar Sound Security</span>
               </h2>
-              <p class="support__descr  wow fadeInLeft">
+              <p class="support__descr wow fadeInLeft">
                 Комплексная поддержка команды головной компании гарантирует
                 успешное открытие компании по&nbsp;шумоизоляции.
               </p>
-              <div class="support__main  wow fadeInUp">
+              <div class="support__main wow fadeInUp">
                 <div class="support__tabs">
                   <div class="support__tab-item active">
                     Организация торговой точки
@@ -3071,7 +3090,7 @@
                 показателям к г. Нижний Новгород.
               </p>
               <div class="plan__top wow fadeInUpBig">
-                <div class="plan__item ">
+                <div class="plan__item">
                   <div class="plan__city">Воронеж</div>
                 </div>
                 <div class="plan__item">
@@ -3125,6 +3144,11 @@
                   >
                 </h2>
                 <div class="client__description wow fadeInLeft">
+                  <img
+                  class="client__quotation-mark"
+                  src="./img/client/quotation-mark.svg"
+                  alt="quotation-mark"
+                />
                   <p>
                     Становление компании MaxDar Sound Security&nbsp;&mdash; это
                     совокупность работы всей команды, которая работает
@@ -3153,27 +3177,37 @@
                     и&nbsp;готовы передать партнёрам наш опыт&nbsp;по:
                   </p>
                 </div>
-                <img
-                  class="client__quotation-mark"
-                  src="./img/client/quotation-mark.svg"
-                  alt="quotation-mark"
-                />
-                <div class="client__item">
-                  <img src="./img/client/check.svg" alt="check" />
-                  <p>грамоте выстраивания рабочего процесса;</p>
+                
+                <div class="client__list">
+                  <div class="client__item">
+                    <img src="./img/client/check.svg" alt="check" />
+                    <p>грамоте выстраивания рабочего процесса;</p>
+                  </div>
+                  <div class="client__item">
+                    <img src="./img/client/check.svg" alt="check" />
+                    <p>
+                      этапам запуска вашей компании по&nbsp;шумоизоляции квартир
+                      и&nbsp;отдельных помещений;
+                    </p>
+                  </div>
+                  <div class="client__item">
+                    <img src="./img/client/check.svg" alt="check" />
+                    <p>
+                      грамоте ведения бизнеса, чтобы избежать финансовых потерь.
+                    </p>
+                  </div>
                 </div>
-                <div class="client__item">
-                  <img src="./img/client/check.svg" alt="check" />
-                  <p>
-                    этапам запуска вашей компании по&nbsp;шумоизоляции квартир
-                    и&nbsp;отдельных помещений;
+                <div class="client__card">
+                  <img
+                    src="./img/client/man.png"
+                    alt="man"
+                    class="manager__photo"
+                  />
+                  <p class="client__card-name">
+                    <span>Дмитрий Пологов</span> <br />
+                    Руководитель компании MaxDar Sound Security
                   </p>
-                </div>
-                <div class="client__item">
-                  <img src="./img/client/check.svg" alt="check" />
-                  <p>
-                    грамоте ведения бизнеса, чтобы избежать финансовых потерь.
-                  </p>
+                  <div class="client__triangle"></div>
                 </div>
                 <div class="main__form wow fadeInUp">
                   <form action="" class="form top-form">
@@ -3255,13 +3289,7 @@
                     </button>
                   </div>
                 </div>
-                <div class="client__card">
-                  <p class="client__card-name">
-                    <span>Дмитрий Пологов</span> <br />
-                    Руководитель компании MaxDar Sound Security
-                  </p>
-                  <div class="client__triangle"></div>
-                </div>
+                
               </div>
             </div>
           </div>
@@ -3306,10 +3334,10 @@
                     <img src="./img/footer/phone-icon.svg" alt="phone-icon" />
                   </div>
                   <div class="call__text">
-                    <a class="call__number" href="tel:+79219662408"
-                      >8 (916) 630-00-41</a
+                    <a class="call__number" href="tel:+79166300041"
+                      >+7 (916) 630-00-41</a
                     >
-                    <p class="call__order modal-phone">Бесплатный звонок</p>
+                    <p class="call__order modal-phone">Заказать звонок</p>
                   </div>
                 </div>
               </div>

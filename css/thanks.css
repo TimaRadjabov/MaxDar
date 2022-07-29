@@ -156,7 +156,7 @@ body {
 }
 
 .thanks {
-  background: url("../img/thanks/Фон.png") 50% 0 / cover no-repeat;
+  background: url("../img/thanks/thanks-back.png") 50% 0 / cover no-repeat;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -385,8 +385,24 @@ body {
   position: absolute;
   top: 617px;
   left: 821px;
+  z-index: 10;
 }
-
+.thanks__photo{
+  position: relative;
+  bottom: 882px;
+  left: 839px;
+}
+.photo__men{
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 5;
+}
+.photo__sircle{
+  position: absolute;
+  top: 70px;
+  left: 0;
+}
 .thanks__card-name {
   font-family: "DIN Pro-Bold";
   font-size: 20px;
@@ -408,10 +424,12 @@ body {
 }
 
 @media (max-width: 1130px) {
-  .thanks__card {
+  .thanks__card{
     display: none;
   }
-
+  .thanks__photo{
+    display: none;
+  }
   .thanks__social {
     align-items: center;
   }
@@ -532,6 +550,33 @@ body {
     margin: 15px 0;
     font-size: 18px;
   }
+  .thanks__card{
+    display: block;
+    max-width: 270px;
+    padding-top: 190px;
+    position: relative;
+    left: 0;
+    top: 0;
+    z-index: 10;
+    margin: 0 auto;
+  }
+  .thanks__photo {
+    display: block;
+    width: 250px;
+    position: absolute;
+    bottom: 403px;
+    left: 33%;
+}
+  .thanks__card-name {
+    font-size: 16px;
+    line-height: 125%;
+    padding: 10px;
+}
+  .photo__sircle{
+    width: 220px;
+    top: 64px;
+    left: 15px;
+  }
 }
 @media (max-width: 600px) {
   .thanks__back-homepage {
@@ -539,6 +584,10 @@ body {
     text-align: center;
     font-size: 16px;
   }
+  .thanks__photo {
+    bottom: 435px;
+    left: 4%;
+}
 }
 .footer {
   background-color: #8a8a8a;

@@ -9,6 +9,11 @@
       href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@700&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css"
+    />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
     <link rel="stylesheet" href="./css/reset.css" />
     <link rel="stylesheet" href="./css/thanks.css" />
     <link rel="stylesheet" href="./css/animate.css">
@@ -78,8 +83,9 @@
                   бизнес можно было просто и понятно
                 </p>
                 <div class="thanks__video-play">
-                  <iframe src="https://www.youtube.com/embed/GBQIynxa2lI?enablejsapi=1&version=3&wmode=transparent" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                  <img src="./img/thanks/poster.png" alt="poster" class="poster">
+                  <a data-fancybox href="https://www.youtube.com/embed/GBQIynxa2lI?enablejsapi=1&version=3&wmode=transparent"  data-width="1000" data-height="700">
+                    <img src="./img/thanks/poster.png" width="242" height="122" />
+                   </a>
                 </div>
               </div>
               <div class="thanks__social">
@@ -162,12 +168,6 @@
                   </div>
                 </div>
               </div>
-              <a class="thanks__back-homepage" href="index.html"
-                >Вернуться на основную страницу
-              </a>
-              <p class="thanks__advertisement">
-                Cоседей не выбирают, а шумоизоляцию можно выбрать у нас
-              </p>
               <div class="thanks__card">
                 <p class="thanks__card-name">
                   <span>Максим Дедов</span> <br />
@@ -175,6 +175,16 @@
                 </p>
                 <div class="thanks__triangle"></div>
               </div>
+              <div class="thanks__photo"><img src="./img/thanks/man.png" alt="man" class="photo__men">
+              <img src="./img/thanks/Ellipse.svg" alt="circle" class="photo__sircle"></div>
+              <a class="thanks__back-homepage" href="index.html"
+                >Вернуться на основную страницу
+              </a>
+              <p class="thanks__advertisement">
+                Cоседей не выбирают, а шумоизоляцию можно выбрать у нас
+              </p>
+             
+              
             </div>
           </div>
         </dib>
@@ -218,10 +228,10 @@
                     <img src="./img/footer/phone-icon.svg" alt="phone-icon" />
                   </div>
                   <div class="call__text">
-                    <a class="call__number" href="tel:+79219662408"
-                      >8 (916) 630-00-41</a
+                    <a class="call__number" href="tel:+79166300041"
+                      >+7 (916) 630-00-41</a
                     >
-                    <p class="call__order modal-phone">Бесплатный звонок</p>
+                    <p class="call__order modal-phone">Заказать звонок</p>
                   </div>
                 </div>
               </div>
@@ -249,7 +259,7 @@
       </footer>
     </div>
     <script src="./js/thanks.js"></script>
-    <script src="./js/poster.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
     <script src="./js/wow.min.js"></script>
     <script>new WOW().init()</script>
   </body>

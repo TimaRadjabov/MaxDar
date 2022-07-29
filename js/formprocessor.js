@@ -277,11 +277,11 @@ $(document).ready(function () {
         contentType: false,
         dataType: "json",
         beforeSend: function (data) {
-
+          console.log('sending');
         },
         success: function (data) {
           console.log("success", data);
-          if (resp == 1)
+          if (data == 1)
 				  {
 					 window.location.href = "thanks.html"
 				  }

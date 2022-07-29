@@ -16,31 +16,25 @@ document.addEventListener("DOMContentLoaded", function () {
       item.style.minWidth = `${itemWidth}px`;
     });
     btnPrev.addEventListener("click", function () {
-      const itemLeft = Math.abs(position) / itemWidth;
-
-      position +=
-        itemLeft >= slidesToScroll ? movePosition : itemLeft * itemWidth;
+      if (position == 0) {
+        position = -(movePosition * 2)
+       
+      }else{
+        position += movePosition;
+      }
       setPosition();
-      checkBtns();
     });
     btnNext.addEventListener("click", function () {
-      const itemLeft =
-        itemCount - (Math.abs(position) + slidesToShow * itemWidth) / itemWidth;
-
-      position -=
-        itemLeft >= slidesToScroll ? movePosition : itemLeft * itemWidth;
+      position -=movePosition;
+      if (position <= -(movePosition * itemCount)) {
+        position = 0
+      }
       setPosition();
-      checkBtns();
     });
     const setPosition = () => {
       track.style.transform = `translateX(${position}px)`;
     };
-    const checkBtns = () => {
-      btnPrev.disabled = position === 0;
-      btnNext.disabled = position <= -(itemCount - slidesToShow) * itemWidth;
-    };
 
-    checkBtns();
   }
   window.addEventListener("resize", handlePosition);
   handlePosition();
@@ -61,31 +55,24 @@ document.addEventListener("DOMContentLoaded", function () {
       item.style.minWidth = `${itemWidth}px`;
     });
     btnPrev.addEventListener("click", function () {
-      const itemLeft = Math.abs(position) / itemWidth;
-
-      position +=
-        itemLeft >= slidesToScroll ? movePosition : itemLeft * itemWidth;
+      if (position == 0) {
+        position = -(movePosition * 7)
+       
+      }else{
+        position += movePosition;
+      }
       setPosition();
-      checkBtns();
     });
     btnNext.addEventListener("click", function () {
-      const itemLeft =
-        itemCount - (Math.abs(position) + slidesToShow * itemWidth) / itemWidth;
-
-      position -=
-        itemLeft >= slidesToScroll ? movePosition : itemLeft * itemWidth;
+      position -=movePosition;
+      if (position <= -(movePosition * itemCount)) {
+        position = 0
+      }
       setPosition();
-      checkBtns();
     });
     const setPosition = () => {
       track.style.transform = `translateX(${position}px)`;
     };
-    const checkBtns = () => {
-      btnPrev.disabled = position === 0;
-      btnNext.disabled = position <= -(itemCount - slidesToShow) * itemWidth;
-    };
-
-    checkBtns();
   }
   window.addEventListener("resize", handleSales);
   handleSales();
